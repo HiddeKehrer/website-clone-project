@@ -20,9 +20,9 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="bg-[#FDFBF8] py-20 lg:py-28">
+    <section id="how-it-works" className="py-20 lg:py-28">
       <div className="container mx-auto px-4 text-center mb-12">
-        <span className="inline-flex items-center gap-2 bg-white border border-border text-primary text-sm font-medium px-4 py-1.5 rounded-full mb-4">
+        <span className="inline-flex items-center gap-2 bg-emphasis border border-gray-200 text-sm font-medium px-4 py-1.5 rounded-full mb-4">
           <Wrench className="w-4 h-4" />
           How it works
         </span>
@@ -33,7 +33,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step) => (
-            <div key={step.number} className="bg-card border border-border rounded-xl p-6 lg:p-8 text-center lg:text-left space-y-5 h-full">
+            <div key={step.number} className="bg-emphasis border border-border rounded-xl p-6 lg:p-8 text-center lg:text-left space-y-5 h-full">
               <p className="font-heading text-8xl text-[#DFEDCC] font-normal">
                 {step.number}
               </p>

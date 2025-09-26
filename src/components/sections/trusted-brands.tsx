@@ -23,7 +23,7 @@ const LogoCarouselContent = () => (
 
 const TrustedBrands = () => {
     return (
-        <section className="bg-white">
+        <section className="bg-emphasis">
             <div className="mx-auto flex max-w-[1200px] items-center gap-x-2 px-4 lg:gap-x-4">
                 <h2 className="flex-shrink-0 pb-0 text-sm font-heading text-black">
                     Trusted by <br /> top brands

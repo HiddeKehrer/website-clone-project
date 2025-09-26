@@ -6,13 +6,13 @@ const BenefitsSection = () => {
     'bg-[repeating-linear-gradient(-45deg,theme(colors.border),theme(colors.border)_1px,transparent_1px,transparent_16px)]';
 
   return (
-    <section id="benefits" className="py-20 lg:py-[120px] px-4 bg-[#FDFBF8] space-y-10">
+    <section id="benefits" className="py-20 lg:py-[120px] px-4 space-y-10">
       <div className="text-center space-y-4">
-        <span className="inline-flex items-center gap-2 bg-[#C5F29B] text-primary text-sm font-medium px-4 py-1.5 rounded-full">
+        <span className="inline-flex items-center gap-2 bg-emphasis border border-gray-200 text-sm font-medium px-4 py-1.5 rounded-full">
           <Sparkles className="w-4 h-4" />
           Benefits
         </span>
-        <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] text-primary font-normal leading-tight [text-wrap:balance]">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance]">
           Transform your e-commerce <br className="hidden sm:block" />
           site with a CRO audit.
         </h2>
@@ -20,14 +20,14 @@ const BenefitsSection = () => {
 
       <div className="container mx-auto space-y-4 max-w-6xl">
         {/* Card 1: Uncover hidden conversion killers */}
-        <div className="bg-white border border-border rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
+        <div className=" border border-border bg-emphasis rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
           <div className="space-y-4 p-2 md:p-4">
-            <h3 className="font-heading text-2xl md:text-3xl text-primary font-normal leading-tight [text-wrap:balance]">
+            <h3 className="font-heading text-2xl md:text-3xl font-normal leading-tight [text-wrap:balance]">
               Uncover hidden
               <br />
               <span className="relative inline-block">
                 conversion killers
-                <span className="absolute left-0 bottom-0 h-[3px] w-full bg-accent -mb-1"></span>
+                <span className="absolute left-0 bottom-0 h-[3px] w-full bg-black -mb-1"></span>
               </span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -45,7 +45,7 @@ const BenefitsSection = () => {
               />
               <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
                 <div className="bg-gray-800 p-2 rounded-2xl shadow-lg w-full aspect-[4/3]">
-                  <div className="w-full h-full bg-white rounded-lg"></div>
+                  <div className="w-full h-full  rounded-lg"></div>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ const BenefitsSection = () => {
         </div>
 
         {/* Card 2: Increase AOV and boosting brand trust */}
-        <div className="bg-white border border-border rounded-xl flex flex-col-reverse lg:grid lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
+        <div className=" border border-border rounded-xl bg-emphasis flex flex-col-reverse lg:grid lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative h-full flex items-center justify-center p-3 md:p-4">
               <Image
@@ -70,7 +70,7 @@ const BenefitsSection = () => {
                     alt="Profile"
                     width={80}
                     height={80}
-                    className="relative rounded-full border border-border bg-white"
+                    className="relative rounded-full border border-border "
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/images/next-664726-profile-image-16.jpg?"
                   />
                 </div>
@@ -92,7 +92,7 @@ const BenefitsSection = () => {
         </div>
 
         {/* Card 3: Reduce acquisition costs */}
-        <div className="bg-white border border-border rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
+        <div className=" border border-border bg-emphasis rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
           <div className="space-y-4 p-2 md:p-4">
             <h3 className="font-heading text-2xl md:text-3xl text-primary font-normal leading-tight [text-wrap:balance]">
               Reduce
@@ -117,7 +117,7 @@ const BenefitsSection = () => {
               />
               <div className="relative w-[150px] md:w-[180px]">
                 <div className="bg-gray-800 p-1.5 rounded-3xl shadow-lg w-full aspect-[9/19.5]">
-                  <div className="w-full h-full bg-white rounded-2xl"></div>
+                  <div className="w-full h-full  rounded-2xl"></div>
                 </div>
               </div>
             </div>

@@ -21,14 +21,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-emphasis border-t border-gray-200">
       <div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between py-6">
           <div className="flex-shrink-0">
-            <Link href="/" aria-label="Peek Insights Home">
+            <Link href="/" aria-label="Pipeguru Home">
               <Image
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/peek-insights-logo-1-1.svg?"
-                alt="Peek Insights Logo"
+                alt="Pipeguru Logo"
                 width={160}
                 height={33}
                 className="h-auto"

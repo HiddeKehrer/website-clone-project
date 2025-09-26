@@ -41,12 +41,12 @@ const includedData = [
 
 const WhatsIncluded = () => {
   return (
-    <section id="whats-included" className="py-20 lg:py-24 bg-white">
+    <section id="whats-included" className="py-20 lg:py-24">
       <div className="container">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-start mb-12 lg:mb-16">
             <div className="space-y-4">
-              <span className="inline-flex items-center gap-2 bg-gray-100 text-foreground text-sm font-medium px-4 py-1.5 rounded-full">
+              <span className="inline-flex items-center gap-2 bg-emphasis border border-gray-200 text-sm font-medium px-4 py-1.5 rounded-full">
                 What's included
               </span>
               <h2 className="font-heading text-4xl md:text-5xl text-[#1A1A1A] leading-tight" style={{ textWrap: 'balance' }}>
@@ -59,7 +59,7 @@ const WhatsIncluded = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {includedData.map((item, index) => (
-              <div key={index} className="p-8 rounded-xl border border-border">
+              <div key={index} className="bg-emphasis p-8 rounded-xl border border-gray-200">
                 <Image
                   src={item.iconUrl}
                   alt={item.alt}
@@ -67,7 +67,7 @@ const WhatsIncluded = () => {
                   height={72}
                   className="mb-6"
                 />
-                <h3 className="font-heading text-2xl font-semibold text-foreground mb-2">
+                <h3 className="font-heading text-2xl font-semibold text-[#171717] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
@@ -76,7 +76,7 @@ const WhatsIncluded = () => {
                 <ul className="space-y-3 mt-6">
                   {item.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <Check className="w-5 h-5 text-black flex-shrink-0 mt-1" />
                       <span className="text-base text-muted-foreground">{feature}</span>
                     </li>
                   ))}

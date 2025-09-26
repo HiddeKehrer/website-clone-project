@@ -1,3 +1,5 @@
+
+import Header from '@/components/sections/Header';
 import HeroSection from '@/components/sections/hero-section';
 import TrustedBrands from '@/components/sections/trusted-brands';
 import ValueProposition from '@/components/sections/value-proposition';
@@ -13,19 +15,46 @@ import Footer from '@/components/sections/footer';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <HeroSection />
-      <TrustedBrands />
-      <ValueProposition />
-      <BenefitsSection />
-      <TestimonialsSection />
-      <WhatsIncluded />
-      <PortfolioShowcase />
-      <HowItWorks />
-      <PricingSection />
-      <FaqSection />
-      <FooterCta />
-      <Footer />
+    <main className="min-h-screen frame-layout pt-20">
+      <div className="section-frame no-border">
+        <Header />
+      </div>
+      <div className="section-frame">
+        <HeroSection />
+      </div>
+      <div className="section-frame">
+        <TrustedBrands />
+      </div>
+      <div className="section-frame">
+        <ValueProposition />
+      </div>
+      <div className="section-frame">
+        <BenefitsSection />
+      </div>
+      <div className="section-frame">
+        <TestimonialsSection />
+      </div>
+      <div className="section-frame">
+        <WhatsIncluded />
+      </div>
+      {/* <div className="section-frame">
+        <PortfolioShowcase />
+      </div> */}
+      <div className="section-frame">
+        <HowItWorks />
+      </div>
+      <div className="section-frame">
+        <PricingSection />
+      </div>
+      <div className="section-frame">
+        <FaqSection />
+      </div>
+      <div className="section-frame">
+        <FooterCta />
+      </div>
+      <div className="section-frame">
+        <Footer />
+      </div>
     </main>
   );
 }

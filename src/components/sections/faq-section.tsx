@@ -52,7 +52,7 @@ const faqData = [
 
 const FaqSection = () => {
   return (
-    <section id="faq" className="bg-[#FDFBF8] py-20 lg:py-24">
+    <section id="faq" className="py-20 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-12 font-heading text-4xl text-primary-black md:text-[40px]">

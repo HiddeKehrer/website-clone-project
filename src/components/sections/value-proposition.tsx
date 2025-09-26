@@ -7,7 +7,7 @@ export default function ValueProposition() {
     <section id="cro-intro" className="relative z-[1] py-12 lg:py-20 xl:py-24">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="grid lg:grid-cols-2">
-          <div className="bg-accent p-6 pt-10 md:p-10 lg:p-12 xl:p-16 flex flex-col justify-center">
+          <div className="bg-emphasis border border-border rounded-xl p-6 pt-10 md:p-10 lg:p-12 xl:p-16 flex flex-col justify-center">
             <div className="mb-4 lg:mb-6">
               <Image
                 alt="Magnifying glass illustration"
@@ -31,7 +31,7 @@ export default function ValueProposition() {
             <div className="pt-2">
               <Link
                 href="/free-audit"
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary text-primary-foreground font-medium rounded-lg px-6 py-4 text-base transition-colors hover:bg-neutral-800"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-primary text-primary-foreground font-medium rounded-lg px-6 py-4 text-base transition-colors hover:bg-primary"
               >
                 Get your FREE Audit
                 <ArrowUpRight className="w-5 h-5" />

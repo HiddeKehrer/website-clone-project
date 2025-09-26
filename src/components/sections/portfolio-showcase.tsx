@@ -67,7 +67,7 @@ const PortfolioShowcase = () => {
               className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 ${
                 activeTab === tab
                   ? "bg-primary-black text-white"
-                  : "bg-white text-primary-black border border-gray-200 hover:bg-gray-100"
+                  : " text-primary-black border border-gray-200 hover:bg-gray-100"
               }`}
             >
               {tab}
@@ -78,7 +78,7 @@ const PortfolioShowcase = () => {
         {activeContent && (
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr,1fr] lg:gap-12 gap-8 items-start">
             <div className="relative">
-              <div className="grid grid-cols-2 gap-px bg-gray-300 border border-gray-300 rounded-xl overflow-hidden shadow-lg">
+              <div className="grid grid-cols-2 gap-px  border border-gray-300 rounded-xl overflow-hidden shadow-lg">
                 <div className="relative">
                   <Image
                     src={activeContent.beforeImage}
@@ -87,7 +87,7 @@ const PortfolioShowcase = () => {
                     height={1085}
                     className="w-full h-auto object-cover"
                   />
-                  <span className="absolute top-4 left-4 bg-white/90 text-black text-xs font-semibold px-2 py-0.5 rounded-md backdrop-blur-sm">
+                  <span className="absolute top-4 left-4 /90 text-black text-xs font-semibold px-2 py-0.5 rounded-md backdrop-blur-sm">
                     Before
                   </span>
                 </div>
@@ -99,14 +99,14 @@ const PortfolioShowcase = () => {
                     height={1085}
                     className="w-full h-auto object-cover"
                   />
-                  <span className="absolute top-4 left-4 bg-white/90 text-black text-xs font-semibold px-2 py-0.5 rounded-md backdrop-blur-sm">
+                  <span className="absolute top-4 left-4 /90 text-black text-xs font-semibold px-2 py-0.5 rounded-md backdrop-blur-sm">
                     After
                   </span>
                   {activeContent.annotations.map((ann) => (
                     <div
                       key={ann.id}
                       style={{ top: ann.top, left: ann.left }}
-                      className="absolute -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-white border-2 border-black rounded-full flex items-center justify-center font-bold text-sm text-black"
+                      className="absolute -translate-x-1/2 -translate-y-1/2 w-7 h-7  border-2 border-black rounded-full flex items-center justify-center font-bold text-sm text-black"
                     >
                       {ann.id}
                     </div>
