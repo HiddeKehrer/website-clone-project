@@ -1,7 +1,7 @@
 import React from 'react';
 
 const logos = [
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/logo-brewlander-5-5.svg?", alt: "Brewlander" },
+  { src: "/antler.svg", alt: "Antler" },
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/logo-bta-6-6.svg?", alt: "BTA" },
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/logo-cheeky-bonsai-7-7.svg?", alt: "Cheeky Bonsai" },
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/logo-sundae-9-8.svg?", alt: "Sundae" },

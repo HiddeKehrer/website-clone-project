@@ -3,13 +3,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const words = ['conversion', 'experiments', 'growth'];
+  const words = ['experiments', 'conversions', 'growth'];
   
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -49,10 +50,10 @@ const HeroSection = () => {
           <div className="flex flex-col items-center text-center space-y-6 z-10 max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-emphasis border border-gray-200 rounded-full px-4 py-2 text-sm font-medium">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span>live</span>
+              <span>No engineers needed</span>
             </div>
             <h1 className="font-['Playfair_Display'] text-5xl md:text-[56px] font-normal leading-tight text-balance">
-              Speed up growth experiments, without engineering effort
+              Speed up your growth experiments
             </h1>
             <p className="font-['Inter'] text-lg max-w-2xl text-balance">
             Launch AI powered onboarding flows, in-app messages, and A/B tests without new app releases
@@ -60,10 +61,10 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 href="/free-audit/"
-                className="bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base block text-center min-w-[200px]"
+                className="bg-black text-white px-7 py-3.5 rounded-lg font-bold text-base flex items-center justify-center gap-2 w-[240px]"
               >
-                increase {currentText}
-                <span className="animate-pulse">|</span>
+                More {currentText}
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
