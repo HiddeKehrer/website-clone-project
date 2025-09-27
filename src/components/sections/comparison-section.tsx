@@ -50,7 +50,7 @@ const ComparisonSection = () => {
         </span>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance]">
           Why choose us over <br className="hidden sm:block" />
-          the competition?
+        <span className="italic">competition</span> or <span className="font-bold">alternatives</span>?
         </h2>
       </div>
 
@@ -58,27 +58,29 @@ const ComparisonSection = () => {
 
         {/* Comparison Card */}
         <div className="border-2 border-gray-200 bg-emphasis rounded-xl shadow-sm relative mt-6 overflow-visible">
+          {/* Badge positioned outside the table */}
+          <div className="absolute -top-3 right-0 w-1/5 flex justify-center z-30 whitespace-nowrap">
+            <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              BEST CHOICE
+            </span>
+          </div>
+          
           {/* Table Header */}
           <div className="grid grid-cols-5 bg-white border-b border-border overflow-visible rounded-t-xl">
-            <div className="p-3 lg:p-5 text-center rounded-tl-xl flex items-center justify-center">
+            <div className="p-3 lg:p-5 text-center rounded-tl-xl flex items-center justify-center min-h-[60px]">
               <h3 className="font-heading text-base font-semibold text-black">Category</h3>
             </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center">
+            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
               <h3 className="font-heading text-base font-semibold text-black">Inhouse/Manual</h3>
             </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center">
+            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
               <h3 className="font-heading text-base font-semibold text-black">CRO Agency</h3>
             </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center">
+            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
               <h3 className="font-heading text-base font-semibold text-black">A/B testing tools</h3>
             </div>
-             <div className="p-3 lg:p-5 text-center border-l border-border bg-green-50/50 relative rounded-tr-xl flex items-center justify-center">
-               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-30 whitespace-nowrap">
-                 <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                   BEST CHOICE
-                 </span>
-               </div>
-               <h3 className="font-heading text-base font-semibold pt-2 text-black">Pipeguru</h3>
+             <div className="p-3 lg:p-5 text-center border-l border-border bg-green-50/50 rounded-tr-xl flex items-center justify-center min-h-[60px]">
+               <h3 className="font-heading text-base font-semibold text-black">Pipeguru</h3>
              </div>
           </div>
 
@@ -124,7 +126,7 @@ const ComparisonSection = () => {
         <div className="flex justify-center pt-6">
           <a
             href="/free-audit"
-            className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-lg font-bold text-base hover:bg-gray-800 transition-colors shadow-sm"
+            className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-lg font-medium text-base hover:bg-gray-800 transition-colors shadow-sm"
           >
             Get Started Today
           </a>

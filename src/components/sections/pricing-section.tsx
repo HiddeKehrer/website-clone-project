@@ -30,7 +30,7 @@ const PricingSection = () => {
     <section id="pricing" className="py-20 lg:py-24">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-normal [text-wrap:balance]">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance]">
             Early Access Pricing
           </h2>
           <p className="mt-4 text-lg text-text-gray">
@@ -57,7 +57,7 @@ const PricingSection = () => {
               </div>
 
               <div className="mt-8 flex flex-col gap-4">
-                <a href={plan.ctaPrimary.href} className="w-full text-center bg-black text-white px-6 py-3.5 rounded-lg font-bold text-base">
+                <a href={plan.ctaPrimary.href} className="w-full text-center bg-black text-white px-6 py-3.5 rounded-lg font-medium text-base hover:bg-gray-800 transition-colors">
                   {plan.ctaPrimary.text}
                 </a>
               </div>

@@ -45,6 +45,12 @@ const Header = () => {
               >
                 Pricing
               </a>
+              <a
+                href="#comparison"
+                className="text-sm font-medium hover:text-gray-600 transition-colors"
+              >
+                Comparison
+              </a>
               {/* <a
                 href="#testimonials"
                 className="text-sm font-medium hover:text-gray-600 transition-colors"

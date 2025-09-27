@@ -34,7 +34,7 @@ const HeroSection = () => {
   }, [currentText, currentIndex, isDeleting, words]);
 
   return (
-    <section className="relative py-20 lg:py-24 overflow-x-clip">
+    <section className="relative py-20 lg:py-24 overflow-x-clip hero-section">
       <div
         className="absolute inset-0"
         style={{
@@ -45,6 +45,68 @@ const HeroSection = () => {
           opacity: 0.3,
         }}
       />
+      {/* Top blur overlay - only affects the grid background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(248, 249, 250, 0.8) 0%, rgba(248, 249, 250, 0.4) 25%, transparent 50%)',
+          maskImage: 'linear-gradient(to bottom, black 0%, black 25%, transparent 50%)',
+        }}
+      />
+      
+      {/* Animated growth chart line */}
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
+        viewBox="0 0 1200 800"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <marker
+            id="arrowhead"
+            markerWidth="10"
+            markerHeight="7"
+            refX="9"
+            refY="3.5"
+            orient="auto"
+          >
+            <polygon
+              points="0 0, 10 3.5, 0 7"
+              fill="#10b981"
+              stroke="#10b981"
+              strokeWidth="1"
+            />
+          </marker>
+        </defs>
+        
+        <path
+          id="chartPath"
+          d="M 80 720 L 160 680 L 240 640 L 320 620 L 400 600 L 480 580 L 560 520 L 640 480 L 720 500 L 800 460 L 880 420 L 960 380 L 1040 320 L 1120 120"
+          fill="none"
+          stroke="#10b981"
+          strokeWidth="2.5"
+          strokeDasharray="0 2000"
+          strokeLinejoin="round"
+          style={{
+            animation: 'drawPath 4s ease-in-out 1s forwards',
+          }}
+        />
+        
+        {/* Moving arrow that follows the line */}
+        <g
+          style={{
+            animation: 'moveArrow 4s ease-in-out 1.1s forwards',
+            opacity: 0,
+          }}
+        >
+          <polygon
+            points="0 0, 12 4, 0 8"
+            fill="#10b981"
+            stroke="#10b981"
+            strokeWidth="1"
+            transform="translate(-6, -4)"
+          />
+        </g>
+      </svg>
       <div className="container mx-auto px-4 max-w-[1200px] relative">
         <div className="flex flex-col items-center justify-center text-center min-h-[60vh]">
           <div className="flex flex-col items-center text-center space-y-6 z-10 max-w-4xl">
@@ -61,10 +123,10 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 href="/free-audit/"
-                className="bg-black text-white px-7 py-3.5 rounded-lg font-bold text-base flex items-center justify-center gap-2 w-[240px]"
+                className="bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base flex items-center justify-center gap-2 w-[240px] hover:bg-gray-800 transition-colors group"
               >
                 More {currentText}
-                <ArrowUpRight className="w-5 h-5" />
+                <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </Link>
             </div>
           </div>

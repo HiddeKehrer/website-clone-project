@@ -50,7 +50,7 @@ const FaqSection = () => {
     <section id="faq" className="py-20 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-12 font-heading text-4xl text-primary-black md:text-[40px]">
+          <h2 className="mb-12 font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance] text-primary-black">
             Have more questions?
           </h2>
         </div>

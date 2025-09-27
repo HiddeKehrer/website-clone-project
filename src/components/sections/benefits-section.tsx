@@ -15,7 +15,7 @@ const BenefitsSection = () => {
         </span>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance]">
           Transform the way <br className="hidden sm:block" />
-          you run experiments.
+          you run experiments
         </h2>
       </div>
 
@@ -36,10 +36,10 @@ const BenefitsSection = () => {
             </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
             >
               Start experimenting
-              <ArrowUpRight className="w-5 h-5" />
+              <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
@@ -103,10 +103,10 @@ const BenefitsSection = () => {
             </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
             >
               Reduce CAC
-              <ArrowUpRight className="w-5 h-5" />
+              <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>
           </div>
         </div>
@@ -126,10 +126,10 @@ const BenefitsSection = () => {
             Match your user's journey to your advertising spend and create personalized user funnels that reduce CAC and increase conversion rates.            </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
             >
               Get started
-              <ArrowUpRight className="w-5 h-5" />
+              <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
