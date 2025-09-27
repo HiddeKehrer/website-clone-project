@@ -7,10 +7,8 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "Benefits", href: "/#benefits" },
-  { name: "Testimonials", href: "/#testimonials" },
-  { name: "What’s included", href: "/#whats-included" },
-  { name: "How it works", href: "/#how-it-works" },
   { name: "Pricing", href: "/#pricing" },
+  { name: "Comparison", href: "/#comparison" },
 ];
 
 export default function Footer() {
@@ -27,10 +25,10 @@ export default function Footer() {
           <div className="flex-shrink-0">
             <Link href="/" aria-label="Pipeguru Home">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/peek-insights-logo-1-1.svg?"
+                src="/logo.svg"
                 alt="Pipeguru Logo"
-                width={160}
-                height={33}
+                width={121}
+                height={26}
                 className="h-auto"
               />
             </Link>
@@ -53,7 +51,7 @@ export default function Footer() {
               href="/free-audit"
               className="hidden lg:inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 py-2 bg-black text-white hover:bg-gray-800 transition-colors"
             >
-              Get a free audit
+              Talk to a founder
             </Link>
             <div className="lg:hidden">
               <button
@@ -85,7 +83,7 @@ export default function Footer() {
                 onClick={handleLinkClick}
                 className="w-full mt-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 bg-black text-white hover:bg-gray-800 transition-colors"
               >
-                Get a free audit
+                Talk to a founder
               </Link>
             </nav>
           </div>
@@ -93,7 +91,7 @@ export default function Footer() {
 
         <div className="text-center py-6 lg:py-0 lg:pb-8 border-t border-gray-200 lg:border-none">
           <p className="text-sm text-gray-500">
-            Delivered in 2 days - No obligations
+            © {new Date().getFullYear()} Pipeguru. All rights reserved.
           </p>
         </div>
       </div>
