@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-emphasis border-t border-gray-200">
+    <footer className="bg-gray-50 border-t border-gray-200">
       <div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between py-6">
           <div className="flex-shrink-0">
