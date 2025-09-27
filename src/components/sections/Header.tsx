@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
@@ -21,8 +22,13 @@ const Header = () => {
         <div className="max-w-[1200px] mx-auto">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="text-xl font-black">
-              Pipeguru
+            <Link href="/" aria-label="Pipeguru Home">
+              <Image
+                src="/logo.svg"
+                alt="Pipeguru Logo"
+                width={120}
+                height={28}
+              />
             </Link>
 
             {/* Navigation */}
