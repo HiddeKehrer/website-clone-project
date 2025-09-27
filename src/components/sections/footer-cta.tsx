@@ -6,7 +6,7 @@ const FooterCta = () => {
       <div className="space-y-4">
         <Link
           href="/free-audit"
-          className="inline-block bg-black text-white text-base font-medium py-4 px-8 rounded-full transition-colors hover:bg-gray-800"
+          className="inline-block bg-black text-white text-base font-medium py-4 px-8 rounded-lg transition-colors hover:bg-gray-800"
         >
           Talk to a founder
         </Link>
