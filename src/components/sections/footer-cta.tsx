@@ -8,10 +8,10 @@ const FooterCta = () => {
           href="/free-audit"
           className="inline-block bg-black text-white text-base font-medium py-4 px-8 rounded-full transition-colors hover:bg-gray-800"
         >
-          Get started with a Free Audit
+          Talk to a founder
         </Link>
         <p className="text-sm text-gray-600">
-          Delivered in 2 days - No obligations
+          Founder-led onboarding with first experiment go-live in 30 mins
         </p>
       </div>
     </section>
