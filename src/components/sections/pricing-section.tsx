@@ -15,9 +15,9 @@ const pricingData = [
     delivery: "Get a personalized quote for your business needs.",
     ctaPrimary: { text: "Talk to a founder", href: "#contact" },
     features: [
-      "AI Assistant to build funnels",
-      "Unlimited funnels, A/B Tests and embedded experience",
-      "Dynamic funnels & conditional logic",
+      "Unlimited funnels, A/B Tests and embedded experiences",
+      "Dynamic funnels with conditional logic",
+      "Sandbox support and warehouse-native hosting",
       "All current & future integrations",
       "Unlimited team members",
       "Founder-led onboarding & support",
