@@ -31,21 +31,30 @@ const BenefitsSection = () => {
               </span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Become independent, start experimenting and get insights in the blink of an eye.
+              Become independent, start experimenting and get insights in the blink of an eye. No more new app releases. Just reduced time to experimentation.
             </p>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
               <Image
-                alt="CRO Uplift Chart"
+                alt="More Experiments"
                 width={202}
                 height={102}
-                className="absolute top-1/2 -translate-y-[calc(50%_+_50px)] right-4 z-10 w-36 md:w-44 lg:w-48"
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/cro-uplift-14-14.svg?"
+                className="absolute top-1/2 -translate-y-[calc(100%_+_80px)] right-2 z-10 w-36 md:w-44 lg:w-48"
+                src="/more_experiments.png"
               />
               <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
-                <div className="bg-gray-800 p-2 rounded-2xl shadow-lg w-full aspect-[4/3]">
-                  <div className="w-full h-full  rounded-lg"></div>
+                <div className="p-2 rounded-2xl w-full aspect-[4/3] overflow-hidden">
+                  <video
+                    className="w-full h-full object-cover rounded-lg"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/Experimentation_time_bold.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
@@ -83,10 +92,10 @@ const BenefitsSection = () => {
           </div>
           <div className="space-y-4 p-2 md:p-4 lg:pl-10">
             <h3 className="font-heading text-2xl md:text-3xl text-primary font-normal leading-tight [text-wrap:balance]">
-              Increase AOV and boosting brand trust
+             Build a culture of experimentation
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Optimize product recommendations to help boost average order value (AOV). Enhance user experience, streamline checkout, and build trust to foster customer loyalty and repeat business.
+              Get unique user insights. Enable non-technical to launch experiments at scale that reduce CAC and increase conversion rates.
             </p>
           </div>
         </div>
@@ -95,29 +104,36 @@ const BenefitsSection = () => {
         <div className=" border border-border bg-emphasis rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
           <div className="space-y-4 p-2 md:p-4">
             <h3 className="font-heading text-2xl md:text-3xl text-primary font-normal leading-tight [text-wrap:balance]">
-              Reduce
+            Design 1:1
               <br />
               <span className="relative inline-block">
-                acquisition costs
+              personalized user funnels matched to advertising
                 <span className="absolute left-0 bottom-0 h-[3px] w-full bg-accent -mb-1"></span>
               </span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Maximize the value of existing traffic and ad spend. We’ll help streamline the customer journey, leading to higher conversion rates and lower acquisition costs per customer.
-            </p>
+            Match your user's journey to your advertising spend and create personalized user funnels that reduce CAC and increase conversion rates.            </p>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
-            <div className="relative h-full flex items-center justify-end p-3 md:p-4 pr-8">
+            <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
               <Image
                 alt="ROAS Chart"
                 width={191}
                 height={150}
                 className="absolute top-8 left-4 z-10 w-36 md:w-44 lg:w-48"
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/roas-chart-16-16.svg?"
-              />
-              <div className="relative w-[150px] md:w-[180px]">
-                <div className="bg-gray-800 p-1.5 rounded-3xl shadow-lg w-full aspect-[9/19.5]">
-                  <div className="w-full h-full  rounded-2xl"></div>
+                              />
+              <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
+                <div className="p-2 rounded-2xl w-full aspect-[4/3] overflow-hidden">
+                  <video
+                    className="w-full h-full object-cover rounded-lg"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/last_video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
