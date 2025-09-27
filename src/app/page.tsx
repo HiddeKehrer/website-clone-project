@@ -52,9 +52,10 @@ export default function HomePage() {
       <div className="section-frame">
         <FooterCta />
       </div>
+      {/*
       <div className="section-frame">
         <Footer />
-      </div>
+      </div>*/}
     </main>
   );
 }
