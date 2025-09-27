@@ -53,7 +53,7 @@ const HeroSection = () => {
               <span>No engineers needed</span>
             </div>
             <h1 className="font-['Playfair_Display'] text-5xl md:text-[56px] font-normal leading-tight text-balance">
-              Speed up your growth experiments
+              Speed up in-app growth experiments
             </h1>
             <p className="font-['Inter'] text-lg max-w-2xl text-balance">
             Launch AI powered onboarding flows, in-app messages, and A/B tests without new app releases

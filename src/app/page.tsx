@@ -1,4 +1,3 @@
-
 import Header from '@/components/sections/Header';
 import HeroSection from '@/components/sections/hero-section';
 import TrustedBrands from '@/components/sections/trusted-brands';
@@ -52,10 +51,9 @@ export default function HomePage() {
       <div className="section-frame">
         <FooterCta />
       </div>
-      {/*
       <div className="section-frame">
         <Footer />
-      </div>*/}
+      </div>
     </main>
   );
 }
