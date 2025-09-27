@@ -10,10 +10,10 @@ const FooterCta = () => {
         <Image
           src="/logo.svg"
           alt=""
-          width={1000}
-          height={220}
+          width={600}
+          height={130}
           className="opacity-[0.12]"
-          style={{ filter: 'blur(8px) grayscale(100%)', transform: 'scale(1.5)' }}
+          style={{ filter: 'blur(8px) grayscale(100%)', transform: 'scale(1.2)' }}
           aria-hidden="true"
         />
       </div>
