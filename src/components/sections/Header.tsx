@@ -26,8 +26,8 @@ const Header = () => {
               <Image
                 src="/logo.svg"
                 alt="Pipeguru Logo"
-                width={120}
-                height={28}
+                width={121}
+                height={26}
               />
             </Link>
 

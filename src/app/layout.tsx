@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     default: defaultTitle,
   },
   description: defaultDescription,
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: defaultTitle,
     description: defaultDescription,
