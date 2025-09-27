@@ -51,15 +51,6 @@ export default function ValueProposition() {
                     </div>
                   </div>
                 </button>
-                {/* Mobile-only video */}
-                <div className={`lg:hidden mt-4 ${activeTab === tab.id ? 'block' : 'hidden'}`}>
-                  <div className="bg-emphasis border border-gray-200 rounded-xl overflow-hidden">
-                    <video key={tab.id} className="w-full h-96 object-cover" autoPlay loop muted playsInline>
-                      <source src={tab.videoSrc} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
