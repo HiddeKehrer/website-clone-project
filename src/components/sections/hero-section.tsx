@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const HeroSection = () => {
   const [currentText, setCurrentText] = useState('');
@@ -64,7 +64,7 @@ const HeroSection = () => {
                 className="bg-black text-white px-7 py-3.5 rounded-lg font-bold text-base flex items-center justify-center gap-2 w-[240px]"
               >
                 More {currentText}
-                <ArrowRight className="w-5 h-5" />
+                <ArrowUpRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
