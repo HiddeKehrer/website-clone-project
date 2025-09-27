@@ -45,12 +45,12 @@ const Header = () => {
               >
                 Pricing
               </a>
-              <a
+              {/* <a
                 href="#testimonials"
                 className="text-sm font-medium hover:text-gray-600 transition-colors"
               >
                 Testimonials
-              </a>
+              </a> */}
             </nav>
 
             {/* Action Button */}

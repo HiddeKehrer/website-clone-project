@@ -30,18 +30,18 @@ export default function HomePage() {
       <div className="section-frame">
         <BenefitsSection />
       </div>
-      <div className="section-frame">
+      {/* <div className="section-frame">
         <TestimonialsSection />
       </div>
       <div className="section-frame">
         <WhatsIncluded />
-      </div>
+      </div> */}
       {/* <div className="section-frame">
         <PortfolioShowcase />
       </div> */}
-      <div className="section-frame">
+      {/* <div className="section-frame">
         <HowItWorks />
-      </div>
+      </div> */}
       <div className="section-frame">
         <PricingSection />
       </div>
