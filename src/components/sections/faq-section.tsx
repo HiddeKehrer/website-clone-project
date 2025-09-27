@@ -9,45 +9,40 @@ import {
 
 const faqData = [
   {
-    question: "What is a CRO audit?",
+    question: "What kind of in-app experiences can I create?",
     answer:
-      "A CRO (Conversion Rate Optimization) audit is a comprehensive analysis of your website to identify potential barriers that are preventing visitors from converting into customers. We look at user experience, design, messaging, and the overall customer journey to provide actionable recommendations.",
+      "You can build a wide range of in-app experiences, such as multi-step interactive onboarding flows, user surveys, and feedback forms. You can also create in-app messages and embedded experiences that match your design system, as well as permission prompts for push notifications, camera, or location access.",
   },
   {
-    question: "Why are CRO audits important?",
+    question: "What platforms does pipeguru support?",
     answer:
-      "CRO audits are crucial for maximizing the return on your existing traffic. Instead of spending more on ads to get new visitors, an audit helps you convert more of the visitors you already have. This leads to increased revenue, a better user experience, and lower customer acquisition costs.",
+      "We offer lightweight SDKs for easy integration with iOS (Swift), Android (Kotlin), React Native, and Flutter applications. Additionally, our founders integrate with your backend APIs and technical stack during the onboarding process to ensure a seamless setup.",
   },
   {
-    question: "How long will it take to receive my audit?",
+    question: "How can pipeguru help me improve my marketing ROI?",
     answer:
-      "The delivery time depends on the plan you choose. Our Free Bite-sized Audit is delivered in 2 days, the Basic CRO Audit in 3-4 days, and the comprehensive Essential CRO Audit takes approximately 2 weeks to complete.",
+      "Pipeguru allows you to rapidly iterate and optimize your in-app messaging and user funnels. By A/B testing different approaches, you can identify the most effective strategies for converting and retaining users, directly impacting your ROI. All this without waiting on engineers or app releases.",
   },
   {
-    question: "What is included in the audit?",
+    question: "Is the pipeguru SDK difficult to integrate?",
     answer:
-      "Our audits include an in-depth analysis of key pages, conversion-focused redesign mockups, and a prioritized checklist of actionable fixes. The specifics, such as the number of pages reviewed and redesigns provided, vary depending on the audit package you select.",
+      "Not at all. We offer lightweight SDKs for all major mobile platforms (iOS, Android, React Native, and Flutter) that are designed for a quick and easy setup. We also provide founder-led onboarding and support to ensure a smooth integration process.",
   },
   {
-    question: "Can you implement the recommendations mentioned in my CRO audit?",
+    question: "How do you ensure that in-app experiences don't compromise our app's security?",
     answer:
-      "While our primary service is providing the audit and actionable recommendations, we do offer implementation services as a separate engagement. Please contact us to discuss your specific needs, and we can provide a custom quote.",
+      "Security is our top priority. All experiences built with pipeguru run in a securely sandboxed environment within our SDK. This means the code operates in a controlled, isolated container, completely separate from your app's core functionalities and sensitive user data. This architecture ensures that nothing you build can interfere with or compromise the integrity and security of your main application",
   },
   {
-    question: "What types of businesses do you work with?",
+    question: "What happens if we launch an experiment with a negative impact?",
     answer:
-      "We primarily work with e-commerce businesses of all sizes, from startups to established brands. Our expertise is in analyzing online stores (especially on platforms like Shopify) to improve their conversion funnels.",
+      "You can instantly roll back. Every change you publish is versioned, and you have a complete history of all deployed experiences. If a new version isn't performing as expected, you can instantly roll back to any previous version with a single click from your dashboard—no app release required. This gives you full control and a safety net for all your experiments",
   },
   {
-    question: "Can you build my online store from scratch?",
+    question: "How does pipeguru impact app performance?",
     answer:
-      "Our specialization is in conversion rate optimization for existing stores. While we don't typically build stores from the ground up, we can recommend trusted partners for development work or provide a CRO-focused consultation before you begin your build.",
-  },
-  {
-    question: "What is your refund policy?",
-    answer:
-      "We offer a 30-day money-back guarantee. If you are not satisfied with the quality and insights provided in your audit, you can request a full refund within 30 days of receiving your report.",
-  },
+      "Our SDKs are designed to be extremely lightweight and have a minimal impact on your app's performance. Experiences are loaded dynamically, ensuring that your app remains fast and responsive",
+  }, 
 ];
 
 const FaqSection = () => {
