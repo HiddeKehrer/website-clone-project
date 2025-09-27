@@ -9,9 +9,9 @@ export default function ValueProposition() {
   const [activeTab, setActiveTab] = useState('connect');
 
   const tabs = [
-    { id: 'connect', label: 'Connect', number: '1' },
-    { id: 'create', label: 'Create', number: '2' },
-    { id: 'monitor', label: 'Monitor', number: '3' }
+    { id: 'connect', label: 'Seamless integration', number: '1', subtitle: 'Connect your application without engineering effort, import all flows from your existing application and start experimenting.' },
+    { id: 'create', label: 'Endless customization', number: '2', subtitle: 'Luanch experiments at scale, create flows, A/n tests and optimize for everything.' },
+    { id: 'monitor', label: 'Effortless monitoring', number: '3', subtitle: 'Track performance, monitor outcomes and reach maximum impact for every feature and every flow.' }
   ];
 
   const getContent = () => {
@@ -86,36 +86,63 @@ export default function ValueProposition() {
                   <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-green-600 font-bold text-lg">{tab.number}</span>
                   </div>
-                  <h3 className="text-xl font-semibold">{tab.label}</h3>
+                  <div className="flex flex-col">
+                    <h3 className="text-xl font-semibold">{tab.label}</h3>
+                    <p className={`text-sm mt-1 ${
+                      activeTab === tab.id ? 'text-gray-600' : 'text-gray-500'
+                    }`}>
+                      {tab.subtitle}
+                    </p>
+                  </div>
                 </div>
               </button>
             ))}
           </div>
 
           {/* Right side - Content */}
-          <div className="bg-emphasis border border-gray-200 rounded-xl p-8">
-            <h2 className="font-heading text-3xl md:text-4xl leading-tight text-black mb-4">
-              {content.title}
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              {content.description}
-            </p>
-            <ul className="space-y-3 mb-8">
-              {content.features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-black rounded-full"></div>
-                  <span className="text-gray-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-bold rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
-            >
-              Learn more
-              <ArrowUpRight className="w-5 h-5" />
-            </Link>
-          </div>
+          {activeTab === 'create' ? (
+            <div className="bg-emphasis border border-gray-200 rounded-xl overflow-hidden">
+              <video
+                key={activeTab}
+                className="w-full h-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/video_create.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ) : activeTab === 'connect' ? (
+            <div className="bg-emphasis border border-gray-200 rounded-xl overflow-hidden">
+              <video
+                key={activeTab}
+                className="w-full h-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/connect.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ) : (
+            <div className="bg-emphasis border border-gray-200 rounded-xl overflow-hidden">
+              <video
+                key={activeTab}
+                className="w-full h-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/monitor.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
         </div>
       </div>
     </section>
