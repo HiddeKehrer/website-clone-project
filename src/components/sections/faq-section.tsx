@@ -11,7 +11,7 @@ const faqData = [
   {
     question: "What kind of in-app experiences can I create?",
     answer:
-      "You can build a wide range of in-app experiences, such as multi-step interactive onboarding flows, user surveys, and feedback forms. You can also create in-app messages and embedded experiences that match your design system, as well as permission prompts for push notifications, camera, or location access.",
+      "You can build a wide range of in-app experiences, such as multi-step interactive onboarding flows, discounts and embedded experiences. You can also create in-app messages that match your design system and permission prompts for push notifications, camera, or location access.",
   },
   {
     question: "What platforms does pipeguru support?",
