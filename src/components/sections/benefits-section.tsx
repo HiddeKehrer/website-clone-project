@@ -66,27 +66,23 @@ const BenefitsSection = () => {
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative h-full flex items-center justify-center p-3 md:p-4">
               <Image
-                alt="AOV Chart"
+                alt="Minus 25%"
                 width={197}
                 height={116}
-                className="absolute bottom-6 left-4 z-10 w-36 md:w-44 lg:w-48"
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/svgs/aov-chart-15-15.svg?"
+                className="absolute bottom-1 left-3 z-10 w-36 md:w-44 lg:w-48"
+                src="/minus_25.png"
               />
-              <div className="absolute top-6 right-6 z-20">
-                <div className="relative w-20 h-20">
-                  <div className="absolute inset-0 rounded-full bg-[#C5F29B] transform translate-x-1 translate-y-1"></div>
-                  <Image
-                    alt="Profile"
-                    width={80}
-                    height={80}
-                    className="relative rounded-full border border-border "
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f0fd0230-87af-4e85-a01e-87798d9c0878-peekinsights-clone-vercel-app/assets/images/next-664726-profile-image-16.jpg?"
-                  />
-                </div>
-              </div>
               <div className="overflow-hidden border border-border rounded-lg w-full max-w-sm aspect-square">
-                 {/* Placeholder for missing image */}
-                 <div className="w-full h-full bg-muted object-cover"></div>
+                 <video
+                   className="w-full h-full object-cover"
+                   autoPlay
+                   loop
+                   muted
+                   playsInline
+                 >
+                   <source src="/lower_CAC.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
               </div>
             </div>
           </div>
@@ -107,7 +103,7 @@ const BenefitsSection = () => {
             Design 1:1
               <br />
               <span className="relative inline-block">
-              personalized user funnels matched to advertising
+              personalized user funnels
                 <span className="absolute left-0 bottom-0 h-[3px] w-full bg-accent -mb-1"></span>
               </span>
             </h3>
@@ -117,11 +113,12 @@ const BenefitsSection = () => {
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
               <Image
-                alt="ROAS Chart"
-                width={191}
-                height={150}
-                className="absolute top-8 left-4 z-10 w-36 md:w-44 lg:w-48"
-                              />
+                alt="Opportunity"
+                width={180}
+                height={140}
+                className="absolute top-1 left-0 z-10 w-32 md:w-44 lg:w-48"
+                src="/opportunity.png"
+              />
               <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
                 <div className="p-2 rounded-2xl w-full aspect-[4/3] overflow-hidden">
                   <video
