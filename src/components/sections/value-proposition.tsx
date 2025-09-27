@@ -45,7 +45,7 @@ export default function ValueProposition() {
                       <span className="text-green-600 font-bold text-lg">{tab.number}</span>
                     </div>
                     <div className="flex flex-col">
-                      <h3 className="text-xl font-semibold">{tab.label}</h3>
+                      <h3 className="font-heading text-xl font-normal leading-tight">{tab.label}</h3>
                       <p className={`text-sm mt-1 ${
                         activeTab === tab.id ? 'text-gray-600' : 'text-gray-500'
                       }`}>

@@ -126,7 +126,7 @@ const ComparisonSection = () => {
         <div className="flex justify-center pt-6">
           <a
             href="/free-audit"
-            className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-lg font-medium text-base hover:bg-gray-800 transition-colors shadow-sm"
+            className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 shadow-sm"
           >
             Get Started Today
           </a>

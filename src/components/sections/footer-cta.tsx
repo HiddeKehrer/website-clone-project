@@ -27,7 +27,7 @@ const FooterCta = () => {
         </div>
         <Link
           href="/free-audit"
-          className="inline-flex items-center justify-center gap-2 bg-black text-white text-base font-medium py-4 px-8 rounded-lg transition-colors hover:bg-gray-800 group"
+          className="inline-flex items-center justify-center gap-2 bg-black text-white text-base font-medium py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
         >
           Get started
           <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

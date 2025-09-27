@@ -36,7 +36,7 @@ const BenefitsSection = () => {
             </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Start experimenting
               <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -103,7 +103,7 @@ const BenefitsSection = () => {
             </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Reduce CAC
               <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -126,7 +126,7 @@ const BenefitsSection = () => {
             Match your user's journey to your advertising spend and create personalized user funnels that reduce CAC and increase conversion rates.            </p>
             <Link
               href="/free-audit"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800 group"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Get started
               <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

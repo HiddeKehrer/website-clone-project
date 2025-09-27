@@ -57,7 +57,7 @@ const PricingSection = () => {
               </div>
 
               <div className="mt-8 flex flex-col gap-4">
-                <a href={plan.ctaPrimary.href} className="w-full text-center bg-black text-white px-6 py-3.5 rounded-lg font-medium text-base hover:bg-gray-800 transition-colors">
+                <a href={plan.ctaPrimary.href} className="w-full text-center bg-black text-white px-6 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200">
                   {plan.ctaPrimary.text}
                 </a>
               </div>

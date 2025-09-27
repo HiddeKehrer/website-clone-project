@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="flex items-center">
             <Link
               href="/free-audit"
-              className="hidden lg:inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 py-2 bg-black text-white hover:bg-gray-800 transition-colors"
+              className="hidden lg:inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 py-2 bg-black text-white hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200"
             >
               Talk to a founder
             </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
               <Link
                 href="/free-audit"
                 onClick={handleLinkClick}
-                className="w-full mt-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 bg-black text-white hover:bg-gray-800 transition-colors"
+                className="w-full mt-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-5 bg-black text-white hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200"
               >
                 Talk to a founder
               </Link>

@@ -123,7 +123,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 href="/free-audit/"
-                className="bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base flex items-center justify-center gap-2 w-[240px] hover:bg-gray-800 transition-colors group"
+                className="bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base flex items-center justify-center gap-2 w-[240px] hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
               >
                 More {currentText}
                 <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

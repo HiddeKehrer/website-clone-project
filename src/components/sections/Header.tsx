@@ -64,7 +64,7 @@ const Header = () => {
               href="https://peekinsights.co/free-audit/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:bg-gray-800 transition-colors"
+              className="bg-black text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200"
             >
               Talk to a founder
             </a>
