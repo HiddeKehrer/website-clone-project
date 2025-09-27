@@ -9,9 +9,9 @@ export default function ValueProposition() {
   const [activeTab, setActiveTab] = useState('connect');
 
   const tabs = [
-    { id: 'connect', label: 'Seamless integration', number: '1', subtitle: 'Connect your application without engineering effort, import all flows from your existing application and start experimenting.' },
-    { id: 'create', label: 'Endless customization', number: '2', subtitle: 'Luanch experiments at scale, create flows, A/n tests and optimize for everything.' },
-    { id: 'monitor', label: 'Effortless monitoring', number: '3', subtitle: 'Track performance, monitor outcomes and reach maximum impact for every feature and every flow.' }
+    { id: 'connect', label: 'Connect', number: '1', subtitle: 'Connect your application without engineering effort, import all flows from your existing application and start experimenting.' },
+    { id: 'create', label: 'Create', number: '2', subtitle: 'Launch experiments at scale, create flows, A/n tests and optimize for everything.' },
+    { id: 'monitor', label: 'Monitor', number: '3', subtitle: 'Track performance, monitor outcomes and reach maximum impact for every feature and every flow.' }
   ];
 
   const getContent = () => {
@@ -66,8 +66,11 @@ export default function ValueProposition() {
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-4">
-            How it works
+            Understand your users
           </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            We enable all non-technical teams to experiment in the blink of an eye.
+          </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Left side - Tabs */}

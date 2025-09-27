@@ -23,15 +23,15 @@ const BenefitsSection = () => {
         <div className=" border border-border bg-emphasis rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
           <div className="space-y-4 p-2 md:p-4">
             <h3 className="font-heading text-2xl md:text-3xl font-normal leading-tight [text-wrap:balance]">
-              Uncover hidden
+              No more
               <br />
               <span className="relative inline-block">
-                conversion killers
+                engineering effort
                 <span className="absolute left-0 bottom-0 h-[3px] w-full bg-black -mb-1"></span>
               </span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              A deep into your website to uncover user Friction Points. We’ll help you gain insights and help prioritise areas of improvement to streamline the conversion process.
+              Become independent, start experimenting and get insights in the blink of an eye.
             </p>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
