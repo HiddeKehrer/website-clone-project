@@ -8,6 +8,7 @@ import WhatsIncluded from '@/components/sections/whats-included';
 import PortfolioShowcase from '@/components/sections/portfolio-showcase';
 import HowItWorks from '@/components/sections/how-it-works';
 import PricingSection from '@/components/sections/pricing-section';
+import ComparisonSection from '@/components/sections/comparison-section';
 import FaqSection from '@/components/sections/faq-section';
 import FooterCta from '@/components/sections/footer-cta';
 import Footer from '@/components/sections/footer';
@@ -44,6 +45,9 @@ export default function HomePage() {
       </div> */}
       <div className="section-frame">
         <PricingSection />
+      </div>
+      <div className="section-frame">
+        <ComparisonSection />
       </div>
       <div className="section-frame">
         <FaqSection />

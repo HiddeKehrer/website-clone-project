@@ -20,7 +20,7 @@ export default function ValueProposition() {
     <section id="cro-intro" className="relative z-[1] py-12 lg:py-20 xl:py-24">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-black mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance] mb-4">
             Understand your users
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

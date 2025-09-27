@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Sparkles } from 'lucide-react';
+import Link from 'next/link';
+import { Sparkles, ArrowUpRight } from 'lucide-react';
 
 const BenefitsSection = () => {
   const diagonalStripes =
@@ -13,8 +14,8 @@ const BenefitsSection = () => {
           Benefits
         </span>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight [text-wrap:balance]">
-          Transform your e-commerce <br className="hidden sm:block" />
-          site with a CRO audit.
+          Transform the way <br className="hidden sm:block" />
+          you run experiments.
         </h2>
       </div>
 
@@ -33,6 +34,13 @@ const BenefitsSection = () => {
             <p className="text-muted-foreground leading-relaxed">
               Become independent, start experimenting and get insights in the blink of an eye. No more new app releases. Just reduced time to experimentation.
             </p>
+            <Link
+              href="/free-audit"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+            >
+              Start experimenting
+              <ArrowUpRight className="w-5 h-5" />
+            </Link>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
@@ -93,6 +101,13 @@ const BenefitsSection = () => {
             <p className="text-muted-foreground leading-relaxed">
               Get unique user insights. Enable non-technical to launch experiments at scale that reduce CAC and increase conversion rates.
             </p>
+            <Link
+              href="/free-audit"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+            >
+              Reduce CAC
+              <ArrowUpRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
 
@@ -109,6 +124,13 @@ const BenefitsSection = () => {
             </h3>
             <p className="text-muted-foreground leading-relaxed">
             Match your user's journey to your advertising spend and create personalized user funnels that reduce CAC and increase conversion rates.            </p>
+            <Link
+              href="/free-audit"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white font-normal rounded-lg px-6 py-3 text-base transition-colors hover:bg-gray-800"
+            >
+              Get started
+              <ArrowUpRight className="w-5 h-5" />
+            </Link>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
             <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
