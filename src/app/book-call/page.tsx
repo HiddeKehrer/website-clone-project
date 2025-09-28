@@ -50,7 +50,7 @@ export default function BookCallPage() {
                   Can't find a suitable time?
                 </p>
                 <a 
-                  href="mailto:hidde@pipeguru.ai?subject=Meeting Request - Alternative Time&body=Hi Hidde,%0D%0A%0D%0AI'd like to schedule a meeting but couldn't find a suitable time in your calendar.%0D%0A%0D%0APlease let me know your availability.%0D%0A%0D%0AThanks!"
+                  href="mailto:hidde@pipeguru.ai?subject=Meeting%20Request%20-%20Alternative%20Time&body=Hi%20Hidde,%0A%0AI'd%20like%20to%20schedule%20a%20meeting%20but%20couldn't%20find%20a%20suitable%20time%20in%20your%20calendar.%0A%0APlease%20let%20me%20know%20your%20availability.%0A%0AThanks!"
                   className="text-gray-600 hover:text-black underline text-sm transition-colors"
                 >
                   Email hidde@pipeguru.ai directly
