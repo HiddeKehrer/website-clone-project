@@ -56,7 +56,7 @@ const HeroSection = () => {
       
       {/* Animated growth chart arrow */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-40 "
         viewBox="0 0 1200 800"
         preserveAspectRatio="none"
       >
