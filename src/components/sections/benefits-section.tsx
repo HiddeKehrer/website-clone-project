@@ -28,7 +28,7 @@ const BenefitsSection = () => {
               <br />
               <span className="relative inline-block">
                 engineering effort
-                <span className="absolute left-0 bottom-0 h-[3px] w-full bg-black -mb-1"></span>
+                <span className="absolute left-0 bottom-0 h-[3px] w-full bg-accent -mb-1"></span>
               </span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -96,8 +96,13 @@ const BenefitsSection = () => {
           </div>
           <div className="space-y-4 p-2 md:p-4 lg:pl-10">
             <h3 className="font-heading text-2xl md:text-3xl text-primary font-normal leading-tight [text-wrap:balance]">
-             Build a culture of experimentation
+             Build a culture of <br />
+             <span className="relative inline-block">
+                experimentation
+                <span className="absolute left-0 bottom-0 h-[3px] w-full bg-accent -mb-1"></span>
+              </span>
             </h3>
+            
             <p className="text-muted-foreground leading-relaxed">
               Get unique user insights. Enable non-technical to launch experiments at scale that reduce CAC and increase conversion rates.
             </p>
