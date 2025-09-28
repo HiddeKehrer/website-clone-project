@@ -36,13 +36,13 @@ const TestimonialsSection = () => {
       <section id="testimonials" className="pt-20 pb-12 md:pt-28 md:pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center justify-center bg-emphasis border border-gray-200 rounded-full px-4 py-2 text-sm font-medium gap-2 mb-4">
+            <div className="inline-flex items-center justify-center bg-white/80 backdrop-blur-sm border border-gray-300/60 rounded-full px-5 py-2.5 text-sm font-semibold gap-2.5 mb-4 shadow-sm hover:shadow-md transition-all duration-200">
               <div className="flex items-center">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4" fill="currentColor" strokeWidth={0} />
+                  <Star key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" strokeWidth={0} />
                 ))}
               </div>
-              <span>Trusted by Top Brands</span>
+              <span className="text-gray-700">Trusted by Top Brands</span>
             </div>
             <h2 className="font-heading text-4xl md:text-5xl leading-tight [text-wrap:balance]">
               Helping brands like yours exceed conversion goals

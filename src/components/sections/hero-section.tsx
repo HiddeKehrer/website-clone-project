@@ -100,15 +100,15 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 max-w-[1200px] relative">
         <div className="flex flex-col items-center justify-center text-center min-h-[60vh]">
           <div className="flex flex-col items-center text-center space-y-6 z-10 max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-emphasis border border-gray-200 rounded-full px-4 py-2 text-sm font-medium">
-              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span>No engineers needed</span>
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-300/60 rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200">
+              <div className="w-2.5 h-2.5 bg-green-500 rounded-full shadow-sm"></div>
+              <span className="text-gray-700">No engineers needed</span>
             </div>
             <h1 className="font-['Playfair_Display'] text-5xl md:text-[56px] font-normal leading-tight text-balance">
               Speed up in-app growth experiments
             </h1>
-            <p className="font-['Inter'] text-lg max-w-2xl text-balance">
-            Launch AI powered onboarding flows, in-app messages, and A/B tests without new app releases
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Launch AI powered onboarding flows, in-app messages, and A/B tests without new app releases.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link

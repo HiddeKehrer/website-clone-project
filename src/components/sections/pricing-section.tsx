@@ -13,7 +13,7 @@ const pricingData = [
     description: "Join our early access program and get founder-led support to build and optimize your in-app user funnels.",
     priceSubtitle: <p className="font-semibold text-gray-700">Custom Pricing</p>,
     delivery: "Get a personalized quote for your business needs.",
-    ctaPrimary: { text: "Talk to a founder", href: "#contact" },
+    ctaPrimary: { text: "Talk to a founder", href: "/book-call" },
     features: [
       "Unlimited funnels, A/B Tests and embedded experiences",
       "Dynamic funnels with conditional logic",

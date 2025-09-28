@@ -48,7 +48,7 @@ const PortfolioShowcase = () => {
     <section className="bg-[#F7F7F7] py-20 lg:py-24">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <span className="inline-block bg-primary-green text-primary-black text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+          <span className="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full mb-4 shadow-lg hover:shadow-xl transition-all duration-200 border border-green-400/30">
             Visualized CRO
           </span>
           <h2 className="font-heading text-4xl md:text-5xl text-primary-black font-normal leading-tight [text-wrap:balance]">

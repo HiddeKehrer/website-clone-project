@@ -5,18 +5,17 @@ import { ArrowUpRight } from 'lucide-react';
 const FooterCta = () => {
   return (
     <section className="relative bg-emphasis text-center py-20 px-4 overflow-hidden">
-      {/* Blurred logo background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ mixBlendMode: 'multiply' }}>
-        <Image
-          src="/logo.svg"
-          alt=""
-          width={600}
-          height={130}
-          className="opacity-[0.12]"
-          style={{ filter: 'blur(8px) grayscale(100%)', transform: 'scale(1.2)' }}
-          aria-hidden="true"
-        />
-      </div>
+      {/* Grid background pattern - same as hero section */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            'linear-gradient(to right, rgb(229, 231, 235) 1px, transparent 1px), linear-gradient(to bottom, rgb(229, 231, 235) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+          maskImage: 'radial-gradient(ellipse 80% 50% at 50% 50%, black 60%, transparent 100%)',
+          opacity: 0.3,
+        }}
+      />
       
       <div className="relative space-y-6 z-10">
         <div className="space-y-3 max-w-2xl mx-auto">
