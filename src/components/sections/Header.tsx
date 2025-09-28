@@ -60,14 +60,12 @@ const Header = () => {
             </nav>
 
             {/* Action Button */}
-            <a 
-              href="https://peekinsights.co/free-audit/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200"
-            >
+        <Link 
+          href="/book-call"
+          className="bg-black text-white px-6 py-2.5 rounded-lg font-medium text-sm hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200"
+        >
               Talk to a founder
-            </a>
+            </Link>
           </div>
         </div>
       </div>

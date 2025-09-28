@@ -35,7 +35,7 @@ const BenefitsSection = () => {
               Become independent, start experimenting and get insights in the blink of an eye. No more new app releases. Just reduced time to experimentation.
             </p>
             <Link
-              href="/free-audit"
+              href="/book-call"
               className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Start experimenting
@@ -102,7 +102,7 @@ const BenefitsSection = () => {
               Get unique user insights. Enable non-technical to launch experiments at scale that reduce CAC and increase conversion rates.
             </p>
             <Link
-              href="/free-audit"
+              href="/book-call"
               className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Reduce CAC
@@ -125,7 +125,7 @@ const BenefitsSection = () => {
             <p className="text-muted-foreground leading-relaxed">
             Match your user's journey to your advertising spend and create personalized user funnels that reduce CAC and increase conversion rates.            </p>
             <Link
-              href="/free-audit"
+              href="/book-call"
               className="inline-flex items-center justify-center gap-2 bg-black text-white font-medium rounded-lg px-6 py-3 text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
             >
               Get started

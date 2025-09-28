@@ -26,7 +26,7 @@ const FooterCta = () => {
           </p>
         </div>
         <Link
-          href="/free-audit"
+          href="/book-call"
           className="inline-flex items-center justify-center gap-2 bg-black text-white text-base font-medium py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
         >
           Get started
