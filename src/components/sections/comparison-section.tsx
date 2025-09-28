@@ -54,72 +54,72 @@ const ComparisonSection = () => {
         </h2>
       </div>
 
-      <div className="container mx-auto space-y-4 max-w-6xl">
-
-        {/* Comparison Card */}
-        <div className="border-2 border-gray-200 bg-emphasis rounded-xl shadow-sm relative mt-6 overflow-visible">
-          {/* Badge positioned outside the table */}
-          <div className="absolute -top-3 right-0 w-1/5 flex justify-center z-30 whitespace-nowrap">
-            <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-              BEST CHOICE
-            </span>
-          </div>
-          
-          {/* Table Header */}
-          <div className="grid grid-cols-5 bg-white border-b border-border overflow-visible rounded-t-xl">
-            <div className="p-3 lg:p-5 text-center rounded-tl-xl flex items-center justify-center min-h-[60px]">
-              <h3 className="font-heading text-base font-semibold text-black">Category</h3>
+      <div className="mx-auto space-y-4 max-w-6xl">
+        <div className="overflow-x-auto">
+          {/* Comparison Card */}
+          <div className="border-2 border-gray-200 bg-emphasis rounded-xl shadow-sm relative mt-6 min-w-[768px]">
+            {/* Badge positioned outside the table */}
+            <div className="absolute -top-3 right-0 w-1/5 flex justify-center z-30 whitespace-nowrap">
+              <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                BEST CHOICE
+              </span>
             </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
-              <h3 className="font-heading text-base font-semibold text-black">Inhouse/Manual</h3>
-            </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
-              <h3 className="font-heading text-base font-semibold text-black">CRO Agency</h3>
-            </div>
-            <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
-              <h3 className="font-heading text-base font-semibold text-black">A/B testing tools</h3>
-            </div>
-             <div className="p-3 lg:p-5 text-center border-l border-border bg-green-50/50 rounded-tr-xl flex items-center justify-center min-h-[60px]">
-               <h3 className="font-heading text-base font-semibold text-black">Pipeguru</h3>
-             </div>
-          </div>
-
-          {/* Comparison Rows */}
-          {comparisons.map((item, index) => (
-            <div 
-              key={index} 
-              className={`grid grid-cols-5 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'} ${index !== comparisons.length - 1 ? 'border-b border-border' : ''} ${index === comparisons.length - 1 ? 'rounded-b-xl overflow-hidden' : ''}`}
-            >
-              <div className={`p-3 lg:p-5 flex items-center ${index === comparisons.length - 1 ? 'rounded-bl-xl' : ''}`}>
-                <span className="text-gray-700 font-medium text-xs leading-relaxed">{item.category}</span>
+            
+            {/* Table Header */}
+            <div className="grid grid-cols-5 bg-white border-b border-border overflow-visible rounded-t-xl">
+              <div className="p-3 lg:p-5 text-center rounded-tl-xl flex items-center justify-center min-h-[60px]">
+                <h3 className="font-heading text-base font-semibold text-black">Category</h3>
               </div>
-              <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
-                <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
-                  <div className={`w-2 h-2 ${item.inhouse.color} rounded-full flex-shrink-0`}></div>
-                  <span className="text-gray-600 text-xs leading-relaxed">{item.inhouse.text}</span>
-                </div>
+              <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
+                <h3 className="font-heading text-base font-semibold text-black">Inhouse/Manual</h3>
               </div>
-              <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
-                <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
-                  <div className={`w-2 h-2 ${item.agency.color} rounded-full flex-shrink-0`}></div>
-                  <span className="text-gray-600 text-xs leading-relaxed">{item.agency.text}</span>
-                </div>
+              <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
+                <h3 className="font-heading text-base font-semibold text-black">CRO Agency</h3>
               </div>
-              <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
-                <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
-                  <div className={`w-2 h-2 ${item.tools.color} rounded-full flex-shrink-0`}></div>
-                  <span className="text-gray-600 text-xs leading-relaxed">{item.tools.text}</span>
-                </div>
+              <div className="p-3 lg:p-5 text-center border-l border-border flex items-center justify-center min-h-[60px]">
+                <h3 className="font-heading text-base font-semibold text-black">A/B testing tools</h3>
               </div>
-               <div className={`p-3 lg:p-5 border-l border-border flex items-center justify-center text-center bg-green-50/50 ${index === comparisons.length - 1 ? 'rounded-br-xl' : ''}`}>
-                 <div className="flex items-center gap-1.5 w-full justify-center">
-                   <div className={`w-2 h-2 ${item.pipeguru.color} rounded-full flex-shrink-0`}></div>
-                   <span className="text-black font-medium text-xs leading-relaxed">{item.pipeguru.text}</span>
-                 </div>
+               <div className="p-3 lg:p-5 text-center border-l border-border bg-green-50/50 rounded-tr-xl flex items-center justify-center min-h-[60px]">
+                 <h3 className="font-heading text-base font-semibold text-black">Pipeguru</h3>
                </div>
             </div>
-          ))}
 
+            {/* Comparison Rows */}
+            {comparisons.map((item, index) => (
+              <div 
+                key={index} 
+                className={`grid grid-cols-5 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'} ${index !== comparisons.length - 1 ? 'border-b border-border' : ''} ${index === comparisons.length - 1 ? 'rounded-b-xl overflow-hidden' : ''}`}
+              >
+                <div className={`p-3 lg:p-5 flex items-center ${index === comparisons.length - 1 ? 'rounded-bl-xl' : ''}`}>
+                  <span className="text-gray-700 font-medium text-xs leading-relaxed">{item.category}</span>
+                </div>
+                <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
+                  <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
+                    <div className={`w-2 h-2 ${item.inhouse.color} rounded-full flex-shrink-0`}></div>
+                    <span className="text-gray-600 text-xs leading-relaxed">{item.inhouse.text}</span>
+                  </div>
+                </div>
+                <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
+                  <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
+                    <div className={`w-2 h-2 ${item.agency.color} rounded-full flex-shrink-0`}></div>
+                    <span className="text-gray-600 text-xs leading-relaxed">{item.agency.text}</span>
+                  </div>
+                </div>
+                <div className="p-3 lg:p-5 border-l border-border flex items-center justify-center text-center">
+                  <div className="flex items-center gap-1.5 w-full justify-center bg-gray-50/50 rounded-md py-1.5 px-2">
+                    <div className={`w-2 h-2 ${item.tools.color} rounded-full flex-shrink-0`}></div>
+                    <span className="text-gray-600 text-xs leading-relaxed">{item.tools.text}</span>
+                  </div>
+                </div>
+                 <div className={`p-3 lg:p-5 border-l border-border flex items-center justify-center text-center bg-green-50/50 ${index === comparisons.length - 1 ? 'rounded-br-xl' : ''}`}>
+                   <div className="flex items-center gap-1.5 w-full justify-center">
+                     <div className={`w-2 h-2 ${item.pipeguru.color} rounded-full flex-shrink-0`}></div>
+                     <span className="text-black font-medium text-xs leading-relaxed">{item.pipeguru.text}</span>
+                   </div>
+                 </div>
+              </div>
+            ))}
+          </div>
         </div>
         
         {/* Centered CTA */}
