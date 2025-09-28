@@ -54,58 +54,48 @@ const HeroSection = () => {
         }}
       />
       
-      {/* Animated growth chart line */}
+      {/* Animated growth chart arrow */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
         viewBox="0 0 1200 800"
         preserveAspectRatio="none"
       >
         <defs>
-          <marker
-            id="arrowhead"
-            markerWidth="10"
-            markerHeight="7"
-            refX="9"
-            refY="3.5"
-            orient="auto"
-          >
-            <polygon
-              points="0 0, 10 3.5, 0 7"
-              fill="#10b981"
-              stroke="#10b981"
-              strokeWidth="1"
-            />
-          </marker>
+          {/* Define the path for the arrow to follow */}
+          <path id="arrowPath" d="M 80 720 L 160 680 L 240 640 L 320 620 L 400 600 L 480 580 L 560 520 L 640 480 L 720 500 L 800 460 L 880 420 L 960 380 L 1040 320 L 1120 120" />
         </defs>
         
+        {/* Trail line */}
         <path
-          id="chartPath"
           d="M 80 720 L 160 680 L 240 640 L 320 620 L 400 600 L 480 580 L 560 520 L 640 480 L 720 500 L 800 460 L 880 420 L 960 380 L 1040 320 L 1120 120"
           fill="none"
           stroke="#10b981"
           strokeWidth="2.5"
-          strokeDasharray="0 2000"
+          strokeDasharray="1500"
+          strokeDashoffset="1500"
+          strokeLinecap="round"
           strokeLinejoin="round"
           style={{
-            animation: 'drawPath 4s ease-in-out 1s forwards',
+            animation: 'drawTrail 4s ease-in-out 1s forwards',
           }}
         />
         
-        {/* Moving arrow that follows the line */}
-        <g
-          style={{
-            animation: 'moveArrow 4s ease-in-out 1.1s forwards',
-            opacity: 0,
-          }}
-        >
-          <polygon
-            points="0 0, 12 4, 0 8"
-            fill="#10b981"
-            stroke="#10b981"
-            strokeWidth="1"
-            transform="translate(-6, -4)"
-          />
-        </g>
+        {/* Anchor points */}
+        <circle cx="80" cy="720" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 1.2s forwards' }} />
+        <circle cx="160" cy="680" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 1.4s forwards' }} />
+        <circle cx="240" cy="640" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 1.6s forwards' }} />
+        <circle cx="320" cy="620" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 1.8s forwards' }} />
+        <circle cx="400" cy="600" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 2.0s forwards' }} />
+        <circle cx="480" cy="580" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 2.2s forwards' }} />
+        <circle cx="560" cy="520" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 2.4s forwards' }} />
+        <circle cx="640" cy="480" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 2.6s forwards' }} />
+        <circle cx="720" cy="500" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 2.8s forwards' }} />
+        <circle cx="800" cy="460" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 3.0s forwards' }} />
+        <circle cx="880" cy="420" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 3.2s forwards' }} />
+        <circle cx="960" cy="380" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 3.4s forwards' }} />
+        <circle cx="1040" cy="320" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 3.6s forwards' }} />
+        <circle cx="1120" cy="120" r="4" fill="#10b981" opacity="0" style={{ animation: 'dotAppear 0.3s ease-in-out 3.8s forwards' }} />
+        
       </svg>
       <div className="container mx-auto px-4 max-w-[1200px] relative">
         <div className="flex flex-col items-center justify-center text-center min-h-[60vh]">

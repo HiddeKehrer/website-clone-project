@@ -306,17 +306,27 @@ nextjs-portal {
   transform: translateX(4px);
 }
 
-/* Growth chart line animation */
-@keyframes drawPath {
+/* Arrow appears at end */
+@keyframes showArrow {
   0% {
-    stroke-dasharray: 0 2000;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Trail drawing animation */
+@keyframes drawTrail {
+  0% {
+    stroke-dashoffset: 1500;
     opacity: 0;
   }
   10% {
     opacity: 1;
   }
   100% {
-    stroke-dasharray: 2000 0;
+    stroke-dashoffset: 0;
     opacity: 1;
   }
 }
