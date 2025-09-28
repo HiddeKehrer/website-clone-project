@@ -48,11 +48,11 @@ const BenefitsSection = () => {
                 alt="More Experiments"
                 width={202}
                 height={102}
-                className="absolute top-1/2 -translate-y-[calc(100%_+_80px)] right-2 z-10 w-36 md:w-44 lg:w-48"
+                className="absolute top-1/2 -translate-y-[110%] md:-translate-y-[calc(100%_+_80px)] right-2 z-10 w-36 md:w-44 lg:w-48"
                 src="/more_experiments.png"
               />
-              <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
-                <div className="p-2 rounded-2xl w-full aspect-[4/3] overflow-hidden">
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="rounded-2xl w-full aspect-[4/3] overflow-hidden">
                   <video
                     className="w-full h-full object-cover rounded-lg"
                     autoPlay
@@ -133,7 +133,7 @@ const BenefitsSection = () => {
             </Link>
           </div>
           <div className={`relative w-full aspect-square lg:aspect-auto self-stretch rounded-lg overflow-hidden ${diagonalStripes}`}>
-            <div className="relative w-full h-full flex items-center justify-center p-3 md:p-4">
+            <div className="relative w-full h-full flex items-center justify-center md:p-4">
               <Image
                 alt="Opportunity"
                 width={180}
@@ -141,8 +141,8 @@ const BenefitsSection = () => {
                 className="absolute top-1 left-0 z-10 w-32 md:w-44 lg:w-48"
                 src="/opportunity.png"
               />
-              <div className="relative p-2 md:p-3 w-full max-w-md mx-auto">
-                <div className="p-2 rounded-2xl w-full aspect-[4/3] overflow-hidden">
+              <div className="relative md:p-4 w-full max-w-md mx-auto">
+                <div className="rounded-2xl w-full aspect-[4/3] overflow-hidden">
                   <video
                     className="w-full h-full object-cover rounded-lg"
                     autoPlay
