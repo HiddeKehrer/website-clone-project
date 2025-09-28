@@ -44,7 +44,6 @@ const TrustedBrands = () => {
                 }
               `}</style>
         </section>
-        
     );
 };
 
