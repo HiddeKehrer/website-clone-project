@@ -26,13 +26,25 @@ const TrustedBrands = () => {
                 </h2>
                 <div className="relative flex-1 overflow-hidden bg-white py-6 md:py-8">
                     <div className="flex">
-                        <div className="flex min-w-full flex-shrink-0 items-center justify-center md:animate-marquee">
+                        <div className="animate-marquee flex min-w-full flex-shrink-0 items-center justify-center">
                             <LogoCarouselContent />
                         </div>
                     </div>
                 </div>
             </div>
+            <style>{`
+                @media (max-width: 767px) {
+                  .animate-marquee {
+                    animation: marquee 10s linear infinite;
+                  }
+                }
+                @keyframes marquee {
+                  0% { transform: translateX(0%); }
+                  100% { transform: translateX(-50%); }
+                }
+              `}</style>
         </section>
+        
     );
 };
 
