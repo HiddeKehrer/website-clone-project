@@ -104,7 +104,7 @@ const BenefitsSection = () => {
             </h3>
             
             <p className="text-muted-foreground leading-relaxed">
-              Get unique user insights. Enable non-technical to launch experiments at scale that reduce CAC and increase conversion rates.
+              Get unique user insights. Enable non-technical experts to launch experiments at scale that reduce CAC and increase conversion rates.
             </p>
             <Link
               href="/book-call"
