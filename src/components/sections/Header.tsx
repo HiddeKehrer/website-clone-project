@@ -62,7 +62,7 @@ const Header = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="font-heading text-base font-normal hover:text-gray-600 transition-colors flex items-center gap-1 py-2">
+                <button className="font-body text-base font-normal hover:text-gray-600 transition-colors flex items-center gap-1 py-2">
                   Solutions
                   <svg 
                     className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
@@ -79,7 +79,7 @@ const Header = () => {
                   <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
                     <Link
                       href="/solutions/marketing-teams"
-                      className="flex items-center gap-3 px-4 py-3 font-heading text-sm font-normal text-gray-700 hover:bg-gray-50 hover:text-black transition-colors group"
+                      className="flex items-center gap-3 px-4 py-3 font-body text-sm font-normal text-gray-700 hover:bg-gray-50 hover:text-black transition-colors group"
                     >
                       <div className="w-5 h-5 border border-gray-300 rounded flex items-center justify-center group-hover:border-black transition-colors">
                         <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:bg-black transition-colors"></div>
@@ -88,7 +88,7 @@ const Header = () => {
                     </Link>
                     <Link
                       href="/solutions/product-teams"
-                      className="flex items-center gap-3 px-4 py-3 font-heading text-sm font-normal text-gray-700 hover:bg-gray-50 hover:text-black transition-colors group"
+                      className="flex items-center gap-3 px-4 py-3 font-body text-sm font-normal text-gray-700 hover:bg-gray-50 hover:text-black transition-colors group"
                     >
                       <div className="w-5 h-5 border border-gray-300 rounded-sm flex items-center justify-center group-hover:border-black transition-colors">
                         <div className="w-2 h-2 border border-gray-400 group-hover:border-black transition-colors"></div>
@@ -101,19 +101,19 @@ const Header = () => {
 
               <a
                 href="#benefits"
-                className="font-heading text-base font-normal hover:text-gray-600 transition-colors"
+                className="font-body text-base font-normal hover:text-gray-600 transition-colors"
               >
                 Benefits
               </a>
               <a
                 href="#pricing"
-                className="font-heading text-base font-normal hover:text-gray-600 transition-colors"
+                className="font-body text-base font-normal hover:text-gray-600 transition-colors"
               >
                 Pricing
               </a>
               <a
                 href="#comparison"
-                className="font-heading text-base font-normal hover:text-gray-600 transition-colors"
+                className="font-body text-base font-normal hover:text-gray-600 transition-colors"
               >
                 Comparison
               </a>
@@ -152,7 +152,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => setIsMobileSolutionsOpen(!isMobileSolutionsOpen)}
-                className="flex items-center justify-between w-full py-2 font-heading text-base font-normal text-gray-700 hover:text-black transition-colors"
+                className="flex items-center justify-between w-full py-2 font-body text-base font-normal text-gray-700 hover:text-black transition-colors"
               >
                 Solutions
                 <ChevronDown className={`w-4 h-4 transition-transform ${isMobileSolutionsOpen ? 'rotate-180' : ''}`} />
@@ -163,7 +163,7 @@ const Header = () => {
                   <Link
                     href="/solutions/marketing-teams"
                     onClick={closeMobileMenu}
-                    className="flex items-center gap-3 py-2 font-heading text-sm font-normal text-gray-600 hover:text-black transition-colors"
+                    className="flex items-center gap-3 py-2 font-body text-sm font-normal text-gray-600 hover:text-black transition-colors"
                   >
                     <div className="w-4 h-4 border border-gray-300 rounded flex items-center justify-center">
                       <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
@@ -173,7 +173,7 @@ const Header = () => {
                   <Link
                     href="/solutions/product-teams"
                     onClick={closeMobileMenu}
-                    className="flex items-center gap-3 py-2 font-heading text-sm font-normal text-gray-600 hover:text-black transition-colors"
+                    className="flex items-center gap-3 py-2 font-body text-sm font-normal text-gray-600 hover:text-black transition-colors"
                   >
                     <div className="w-4 h-4 border border-gray-300 rounded-sm flex items-center justify-center">
                       <div className="w-1.5 h-1.5 border border-gray-400"></div>
@@ -187,21 +187,21 @@ const Header = () => {
             <a
               href="#benefits"
               onClick={closeMobileMenu}
-              className="block py-2 font-heading text-base font-normal text-gray-700 hover:text-black transition-colors"
+              className="block py-2 font-body text-base font-normal text-gray-700 hover:text-black transition-colors"
             >
               Benefits
             </a>
             <a
               href="#pricing"
               onClick={closeMobileMenu}
-              className="block py-2 font-heading text-base font-normal text-gray-700 hover:text-black transition-colors"
+              className="block py-2 font-body text-base font-normal text-gray-700 hover:text-black transition-colors"
             >
               Pricing
             </a>
             <a
               href="#comparison"
               onClick={closeMobileMenu}
-              className="block py-2 font-heading text-base font-normal text-gray-700 hover:text-black transition-colors"
+              className="block py-2 font-body text-base font-normal text-gray-700 hover:text-black transition-colors"
             >
               Comparison
             </a>
