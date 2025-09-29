@@ -39,7 +39,7 @@ export default function ProductTeamsPage() {
               }}
             />
             
-            <div className="container mx-auto px-4 md:px-8 max-w-7xl relative">
+            <div className="container mx-auto px-4 max-w-7xl relative">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
                 {/* Left Column - Content */}
                 <div className="space-y-8">
@@ -51,17 +51,17 @@ export default function ProductTeamsPage() {
                   </span>
                   
                   <div>
-                    <h1 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-normal leading-tight text-balance mb-6">
+                    <h1 className="font-['Playfair_Display'] text-5xl md:text-[56px] font-normal leading-tight text-balance mb-6">
                     Build a culture of experimentation
                     </h1>
-                    <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
+                    <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
                       Stop building features users don't want and make validation a competitive advantage. Increase feature adoption by 40% while reducing development waste.
                     </p>
                     
                     {/* Action Button */}
                     <a 
                       href="/book-call"
-                      className="inline-flex items-center gap-2 font-body bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-sm sm:text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
+                      className="inline-flex items-center gap-2 font-body bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
                     >
                       Talk to a founder
                       <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -71,7 +71,7 @@ export default function ProductTeamsPage() {
 
                 {/* Right Column - Simple Card */}
                 <div className="lg:pl-8">
-                  <div className="bg-[#F1F8FA] rounded-2xl border border-gray-200 shadow-sm min-h-[300px] sm:min-h-[400px] flex items-center justify-center p-6">
+                  <div className="bg-[#F1F8FA] rounded-2xl border border-gray-200 shadow-sm min-h-[300px] sm:min-h-[400px] flex items-center justify-center p-2 sm:p-6">
                     <Image
                       src="/product-teams.png"
                       alt="Product Teams Dashboard"
@@ -92,9 +92,9 @@ export default function ProductTeamsPage() {
             <div className="container mx-auto px-4 max-w-6xl space-y-4">
               
               {/* Card 1: Feature Adoption */}
-              <div className="border border-gray-200 bg-white rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-4 sm:gap-5 p-3 lg:p-4">
-                <div className="space-y-3 sm:space-y-4 p-2 md:p-4">
-                  <h3 className="font-heading text-xl sm:text-2xl md:text-3xl font-normal leading-tight">
+              <div className="border border-gray-200 bg-white rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
+                <div className="space-y-4 p-2 md:p-4">
+                  <h3 className="font-heading text-2xl md:text-3xl font-normal leading-tight text-balance">
                     Ship Features with
                     <br />
                     <span className="relative inline-block">
@@ -147,7 +147,7 @@ export default function ProductTeamsPage() {
                   </div>
                 </div>
                 <div className="space-y-4 p-2 md:p-4 lg:pl-10">
-                  <h3 className="font-heading text-xl sm:text-2xl md:text-3xl font-normal leading-tight">
+                  <h3 className="font-heading text-2xl md:text-3xl font-normal leading-tight text-balance">
                   Design 1:1
                     <br />
                     <span className="relative inline-block">
@@ -162,9 +162,9 @@ export default function ProductTeamsPage() {
               </div>
 
               {/* Card 3: No More Engineering Effort */}
-              <div className="border border-gray-200 bg-white rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-4 sm:gap-5 p-3 lg:p-4">
-                <div className="space-y-3 sm:space-y-4 p-2 md:p-4">
-                  <h3 className="font-heading text-xl sm:text-2xl md:text-3xl font-normal leading-tight">
+              <div className="border border-gray-200 bg-white rounded-xl grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-3 lg:p-4">
+                <div className="space-y-4 p-2 md:p-4">
+                  <h3 className="font-heading text-2xl md:text-3xl font-normal leading-tight text-balance">
                     No More Dev
                     <br />
                     <span className="relative inline-block">
@@ -205,15 +205,15 @@ export default function ProductTeamsPage() {
         <div className="section-frame">
           <section className="py-20">
             <div className="container mx-auto px-4 max-w-6xl text-center">
-              <h2 className="font-heading text-2xl sm:text-3xl font-normal mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal mb-6 text-balance">
                 Ready to build better products?
               </h2>
-              <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                 Join product teams who've increased feature adoption by 40% while reducing development waste.
               </p>
               <a 
                 href="/book-call"
-                className="inline-flex items-center gap-2 font-body bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-base sm:text-lg hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
+                className="inline-flex items-center gap-2 font-body bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
               >
                 Talk to a founder
                 <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
