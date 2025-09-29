@@ -27,7 +27,7 @@ export default function BookCallPage() {
             <div className="container mx-auto px-4 max-w-6xl">
               <div className="text-center mb-12">
                 <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-balance mb-6">
-                  Book a call
+                  Talk to a founder
                 </h1>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                   Let's discuss how Pipeguru can help you speed up your growth experiments and reduce CAC by 25%.

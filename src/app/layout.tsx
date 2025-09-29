@@ -4,6 +4,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const siteName = "Pipeguru";
 const defaultTitle = `${siteName} | Speed up your growth experiments`;
@@ -57,6 +58,7 @@ export default function RootLayout({
         {children}
         <VisualEditsMessenger />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

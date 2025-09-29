@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Check } from 'lucide-react';
+import { Check, ArrowUpRight } from 'lucide-react';
 
 const pricingData = [
   {
@@ -57,8 +57,9 @@ const PricingSection = () => {
               </div>
 
               <div className="mt-8 flex flex-col gap-4">
-                <a href={plan.ctaPrimary.href} className="w-full text-center bg-black text-white px-6 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200">
+                <a href={plan.ctaPrimary.href} className="w-full inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group">
                   {plan.ctaPrimary.text}
+                  <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </a>
               </div>
 

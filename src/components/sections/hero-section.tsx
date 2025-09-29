@@ -112,7 +112,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
-                href="/book-call"
+                href="/solutions/marketing-teams"
                 className="bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base flex items-center justify-center gap-2 w-[240px] hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
               >
                 More {currentText}
