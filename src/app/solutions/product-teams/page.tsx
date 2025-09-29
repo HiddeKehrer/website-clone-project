@@ -71,7 +71,7 @@ export default function ProductTeamsPage() {
 
                 {/* Right Column - Simple Card */}
                 <div className="lg:pl-8">
-                  <div className="bg-white rounded-2xl border border-gray-200 shadow-sm min-h-[300px] sm:min-h-[400px] flex items-center justify-center p-6">
+                  <div className="bg-[#F1F8FA] rounded-2xl border border-gray-200 shadow-sm min-h-[300px] sm:min-h-[400px] flex items-center justify-center p-6">
                     <Image
                       src="/product-teams.png"
                       alt="Product Teams Dashboard"
@@ -200,47 +200,6 @@ export default function ProductTeamsPage() {
           </section>
         </div>
 
-        {/* Integration Section */}
-        <div className="section-frame">
-          <section className="py-20 lg:py-24">
-            <div className="container mx-auto px-4 max-w-6xl">
-              <div className="text-center mb-16">
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] font-normal leading-tight text-balance mb-6">
-                  Seamless Developer Integration
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                  Built for product teams by product teams. Integrate with your existing workflow and development process.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                <div className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-all duration-200 group">
-                  <div className="w-16 h-16 bg-gray-50 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-100 transition-colors">
-                    <div className="text-2xl font-heading font-normal text-black">API</div>
-                  </div>
-                  <h3 className="font-heading text-xl font-normal mb-3 text-gray-900">Developer Friendly</h3>
-                  <p className="text-gray-600 leading-relaxed">RESTful APIs and SDKs for all major frameworks including React, Vue, Angular, and mobile platforms</p>
-                </div>
-                
-                <div className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-all duration-200 group">
-                  <div className="w-16 h-16 bg-gray-50 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-100 transition-colors">
-                    <div className="text-xl font-heading font-normal text-black">CI/CD</div>
-                  </div>
-                  <h3 className="font-heading text-xl font-normal mb-3 text-gray-900">Workflow Integration</h3>
-                  <p className="text-gray-600 leading-relaxed">Seamlessly fits into your existing deployment pipeline with automated testing and rollback capabilities</p>
-                </div>
-                
-                <div className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-all duration-200 group">
-                  <div className="w-16 h-16 bg-gray-50 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-100 transition-colors">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  </div>
-                  <h3 className="font-heading text-xl font-normal mb-3 text-gray-900">Live Monitoring</h3>
-                  <p className="text-gray-600 leading-relaxed">Monitor experiment performance in real-time with detailed analytics and instant alerts for anomalies</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
 
         {/* CTA Section */}
         <div className="section-frame">
