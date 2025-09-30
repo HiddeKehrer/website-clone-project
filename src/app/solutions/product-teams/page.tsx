@@ -51,7 +51,7 @@ export default function ProductTeamsPage() {
                   </span>
                   
                   <div>
-                    <h1 className="font-['Playfair_Display'] text-5xl md:text-[56px] font-normal leading-tight text-balance mb-6">
+                    <h1 className="font-['Playfair_Display'] text-4xl md:text-[56px] font-normal leading-tight text-balance mb-6">
                     Build a culture of experimentation
                     </h1>
                     <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
