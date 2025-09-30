@@ -9,10 +9,31 @@ interface LegalPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((slug) => ({
-    slug,
-  }));
+  try {
+    const posts = getAllPosts();
+    
+    // Fallback to hardcoded slugs if getAllPosts fails
+    if (posts.length === 0) {
+      console.warn('No posts found, using fallback slugs');
+      return [
+        { slug: 'terms' },
+        { slug: 'privacy' },
+        { slug: 'imprint' }
+      ];
+    }
+    
+    return posts.map((slug) => ({
+      slug,
+    }));
+  } catch (error) {
+    console.error('Error in generateStaticParams:', error);
+    // Fallback to ensure pages are generated
+    return [
+      { slug: 'terms' },
+      { slug: 'privacy' }, 
+      { slug: 'imprint' }
+    ];
+  }
 }
 
 export async function generateMetadata({ params }: LegalPageProps): Promise<Metadata> {
