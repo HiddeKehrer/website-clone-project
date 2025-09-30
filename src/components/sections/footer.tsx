@@ -89,10 +89,37 @@ export default function Footer() {
           </div>
         )}
 
-        <div className="text-center py-6 lg:py-0 lg:pb-8 border-t border-gray-200 lg:border-none">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Pipeguru. All rights reserved.
-          </p>
+        <div className="border-t border-gray-200 pt-8 mt-8 pb-8">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            {/* Left side - Copyright */}
+            <div className="text-center lg:text-left">
+              <p className="text-sm text-gray-500">
+                © {new Date().getFullYear()} Pipeguru. All rights reserved.
+              </p>
+            </div>
+            
+            {/* Right side - Legal Links */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-end gap-x-6 gap-y-2">
+              <Link 
+                href="/legal/terms" 
+                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                Terms of Service
+              </Link>
+              <Link 
+                href="/legal/privacy" 
+                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link 
+                href="/legal/imprint" 
+                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                Impressum
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
