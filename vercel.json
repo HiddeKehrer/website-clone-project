@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/docs",
+      "destination": "/docs/build/index.html"
+    },
+    {
       "source": "/docs/:path*",
       "destination": "/docs/build/:path*"
     }
