@@ -4,7 +4,10 @@
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
-        "build": "next build",
+    "dev:docs": "cd docs && npm run start -- --port 3001",
+        "build:next": "next build",
+        "build:docs": "cd docs && npm install && npm run build",
+        "build": "npm run build:next && npm run build:docs",
         "start": "next start",
         "lint": "next lint"
     },
