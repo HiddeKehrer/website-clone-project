@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+<<<<<<< HEAD
     <id>https://pipeguru.ai/docs/blog</id>
     <title>Pipeguru Docs Blog</title>
     <updated>2025-10-03T13:27:19.000Z</updated>
@@ -11,6 +12,19 @@
         <title type="html"><![CDATA[First Blog Post]]></title>
         <id>https://pipeguru.ai/docs/blog/first-blog-post</id>
         <link href="https://pipeguru.ai/docs/blog/first-blog-post"/>
+=======
+    <id>https://pipeguru.ai/blog</id>
+    <title>Pipeguru Docs Blog</title>
+    <updated>2025-10-03T13:27:19.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pipeguru.ai/blog"/>
+    <subtitle>Pipeguru Docs Blog</subtitle>
+    <icon>https://pipeguru.ai/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://pipeguru.ai/blog/first-blog-post</id>
+        <link href="https://pipeguru.ai/blog/first-blog-post"/>
+>>>>>>> 112b5388c07b2a215bcddee43468238630b17041
         <updated>2025-10-03T13:27:19.000Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
         <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
