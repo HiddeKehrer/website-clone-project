@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/docs",
-      "destination": "/docs/build/index.html"
+      "destination": "/docs/index.html"
     },
     {
       "source": "/docs/:path*",
-      "destination": "/docs/build/:path*"
+      "destination": "/docs/:path*"
     }
   ]
 }
