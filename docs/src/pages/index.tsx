@@ -4,28 +4,31 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <div className={styles.heroContainer}>
+    <header className={styles.heroBanner}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className={styles.h1}>
+          New to pipeguru?
+        </h1>
+        <p className={styles.p}>
+          Our getting started guide covers installing your app SDK, setting up your first experiment and start monitoring results.
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Getting Started - 10 mins ⏱️
           </Link>
         </div>
       </div>
     </header>
+    </div>
   );
 }
 
@@ -33,7 +36,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

@@ -5,7 +5,14 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureVideo {
+  height: 100%;
+  width: 100%;
 }
+
+.featureVideoContainer {
+  padding: 2rem;
+  background-image: repeating-linear-gradient(-45deg, #e5e5e5, #e5e5e5 1px, #0000 1px 16px);
+  aspect-ratio: 1;
+}
+
