@@ -12,7 +12,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(to right, rgb(229, 231, 235) 1px, transparent 1px), linear-gradient(to bottom, rgb(229, 231, 235) 1px, transparent 1px);
+  background-image: linear-gradient(to right, var(--ifm-color-emphasis-200) 1px, transparent 1px), linear-gradient(to bottom, var(--ifm-color-emphasis-200) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 60%, transparent 100%);
   opacity: 0.3;
@@ -23,11 +23,13 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(248, 249, 250, 0.8) 0%, rgba(248, 249, 250, 0.4) 25%, transparent 50%);
-  mask-image: linear-gradient(to bottom, black 0%, black 25%, transparent 50%);
+  background: linear-gradient(to bottom, rgba(248, 249, 250, 0.8) 0%, rgba(248, 249, 250, 0.4) 15%, transparent 30%);
+  mask-image: linear-gradient(to bottom, black 0%, black 15%, transparent 30%);
   pointer-events: none;
-  /* z-index is not strictly needed here as ::after paints on top of ::before by default,
-     and both are behind the content because of the parent's z-index context. */
+}
+
+[data-theme='dark'] .heroContainer::after {
+  background: none;
 }
 
 .hero {
@@ -55,4 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img path {
+  fill: white;
 }

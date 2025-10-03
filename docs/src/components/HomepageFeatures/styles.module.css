@@ -12,7 +12,20 @@
 
 .featureVideoContainer {
   padding: 2rem;
-  background-image: repeating-linear-gradient(-45deg, #e5e5e5, #e5e5e5 1px, #0000 1px 16px);
   aspect-ratio: 1;
+  position: relative;
+  z-index: 0;
 }
 
+.featureVideoContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.3;
+  background-image: repeating-linear-gradient(-45deg, #e5e5e5, #e5e5e5 1px, transparent 1px, transparent 16px);
+}
+
+[data-theme='dark'] .featureVideoContainer::before {
+  background-image: repeating-linear-gradient(-45deg, var(--ifm-color-emphasis-200), var(--ifm-color-emphasis-200) 1px, transparent 1px, transparent 16px);
+}

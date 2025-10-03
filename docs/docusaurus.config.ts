@@ -26,6 +26,7 @@ const config: Config = {
   projectName: 'documentation', // Usually your repo name.
 
   onBrokenLinks: 'warn',
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -80,6 +81,9 @@ const config: Config = {
       logo: {
         alt: 'pipeguru.ai logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo_white.svg',
+        width: 149,
+        height: 32,
         href: '/', 
       },
       items: [
