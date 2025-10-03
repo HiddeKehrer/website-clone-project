@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://pipeguru.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/docs',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -76,11 +76,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '',
+      title: 'Docs',
       logo: {
         alt: 'pipeguru.ai logo',
         src: 'img/logo.svg',
-        href: '/', // Link to the docs homepage
+        href: '/', 
       },
       items: [
         {

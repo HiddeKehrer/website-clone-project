@@ -11,7 +11,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <div className={styles.heroContainer}>
-    <header className={styles.heroBanner}>
+    <header className={styles.hero}>
       <div className="container">
         <h1 className={styles.h1}>
           New to pipeguru?

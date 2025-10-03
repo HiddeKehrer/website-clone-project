@@ -30,7 +30,7 @@
      and both are behind the content because of the parent's z-index context. */
 }
 
-.heroBanner {
+.hero {
   padding: 8rem 0;
   text-align: center;
   position: relative;
