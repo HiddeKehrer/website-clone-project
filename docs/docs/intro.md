@@ -1,47 +1,74 @@
 ---
 sidebar_position: 1
 ---
+# Getting Started with PipeGuru
 
-# Tutorial Intro
+Welcome to the PipeGuru developer documentation. PipeGuru empowers your product, marketing, and sales teams to launch mobile A/B tests and feature rollouts in minutes, without writing any code.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Your job is to complete a one-time setup. This guide will walk you through installing the SDK and instrumenting the events that will trigger experiments. Once you're done, your non-technical teammates can take it from there.
 
-## Getting Started
+## 1. Install the SDK
 
-Get started by **creating a new site**.
+Integrating our lightweight SDK is a simple, two-step process. First, add the dependency, then initialize it with your API key.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Platform-Specific Installation
 
-### What you'll need
+- [React Native](./React-Native/installation)
+- [Swift](./Swift/Installation)
+- [Flutter](./Flutter/installation)
+- [Kotlin](./Kotlin/installation)
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+For example, in an iOS app using Swift Package Manager:
 
-## Generate a new site
+```swift
+import PipeGuru
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  PipeGuru.configure(withApiKey: "YOUR_API_KEY")
+  return true
+}
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+That's it. The SDK is now installed.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## 2. Trigger Experiments with Events
 
-## Start your site
+PipeGuru experiments are launched by events. You can trigger an experiment anywhere in your app by tracking an event and passing along user properties for targeting.
 
-Run the development server:
+This context allows your team to create powerful segments, like showing an experiment only to "female users in Berlin" or "male users in Brazil".
 
-```bash
-cd my-website
-npm run start
+### Platform-Specific Triggers
+
+- [React Native](./React-Native/triggering_experiments)
+- [Swift](./Swift/triggering_experiments)
+- [Flutter](./Flutter/triggering_experiments)
+- [Kotlin](./Kotlin/triggering_experiments)
+
+For example, in an iOS app using Swift:
+
+```swift
+// This event can now be used to trigger an experiment from the PipeGuru dashboard
+PipeGuru.track("user_viewed_pricing_page", properties: [
+    "plan": "premium",
+    "user_level": "power_user",
+    "user_properties": [
+        "gender": "female",
+        "city": "Berlin",
+        "country": "Germany"
+    ]
+])
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+With this single line, you've now empowered your team to run experiments on the pricing page for any user segment they can imagine.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## 3. Manage Experiments and Rollouts
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Once the SDK is installed and events are tracked, your work is done. Your non-technical team members can now independently create, launch, and manage experiments and feature rollouts directly from the PipeGuru web console.
+
+They can build new UI in our webview editor, define target audiences, and roll out changes to a small percentage of users. Every change is versioned, so they can monitor results and instantly roll back any experiment that isn't performing well, all without needing 24x7 devops.
+
+## 4. Integrate with Your Stack
+
+PipeGuru plays well with others. You can easily forward all experiment and event data to your existing analytics and CRM platforms.
+
+Whether you use Segment, Amplitude, Mixpanel, or want to send conversion data to Salesforce, PipeGuru ensures a seamless flow of information across your entire stack. This gives you a unified view of your user's journey and the impact of every experiment.
