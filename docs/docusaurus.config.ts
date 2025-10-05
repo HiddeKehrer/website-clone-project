@@ -26,7 +26,7 @@ const config: Config = {
   projectName: 'documentation', // Usually your repo name.
 
   onBrokenLinks: 'warn',
-  trailingSlash: false,
+  trailingSlash: true,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -58,7 +58,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "https://wafrow.com/i/9f38e617-fdc9-43e2-81ee-89d90fe4ad6c?title[text]=Pipeguru%20Docs",
     colorMode: {
       respectPrefersColorScheme: true,
     },
