@@ -13,10 +13,10 @@ Integrating our lightweight SDK is a simple, two-step process. First, add the de
 
 ### Platform-Specific Installation
 
-- [React Native](./React-Native/installation)
-- [Swift](./Swift/Installation)
-- [Flutter](./Flutter/installation)
-- [Kotlin](./Kotlin/installation)
+- [React Native](/React-Native/installation)
+- [Swift](/Swift/Installation)
+- [Flutter](/Flutter/installation)
+- [Kotlin](/Kotlin/installation)
 
 For example, in an iOS app using Swift Package Manager:
 
@@ -39,10 +39,10 @@ This context allows your team to create powerful segments, like showing an exper
 
 ### Platform-Specific Triggers
 
-- [React Native](./React-Native/triggering_experiments)
-- [Swift](./Swift/triggering_experiments)
-- [Flutter](./Flutter/triggering_experiments)
-- [Kotlin](./Kotlin/triggering_experiments)
+- [React Native](/React-Native/triggering_experiments)
+- [Swift](/Swift/triggering_experiments)
+- [Flutter](/Flutter/triggering_experiments)
+- [Kotlin](/Kotlin/triggering_experiments)
 
 For example, in an iOS app using Swift:
 
