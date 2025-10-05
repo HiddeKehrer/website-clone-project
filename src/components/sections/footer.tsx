@@ -104,7 +104,7 @@ export default function Footer() {
                 href="/legal/terms" 
                 className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
               >
-                Terms of Service
+                Terms and Conditions
               </Link>
               <Link 
                 href="/legal/privacy" 
