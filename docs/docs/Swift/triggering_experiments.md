@@ -1,4 +1,9 @@
-# Triggering Experiments
+---
+title: How to trigger experiments in Swift?
+tags: [swift, experiments]
+---
+
+## Triggering Experiments
 
 In your `UIViewController`, you can trigger an experiment when the view appears:
 

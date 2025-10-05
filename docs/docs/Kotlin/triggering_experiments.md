@@ -1,4 +1,9 @@
-# Triggering Experiments
+---
+title: How to trigger experiments in Kotlin?
+tags: [kotlin, experiments]
+---
+
+## Triggering Experiments
 
 In your Android `Activity`, you can trigger an experiment when the activity is created:
 

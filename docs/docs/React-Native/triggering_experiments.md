@@ -1,4 +1,9 @@
-# Triggering Experiments
+---
+title: How to trigger experiments in React Native?
+tags: [react-native, experiments]
+---
+
+## Triggering Experiments
 
 In your React Native component, you can trigger an experiment when the component mounts:
 

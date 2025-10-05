@@ -1,4 +1,9 @@
-# Triggering Experiments
+---
+title: How to trigger experiments in Flutter?
+tags: [flutter, experiments]
+---
+
+## Triggering Experiments
 
 In your Flutter widget, you can trigger an experiment when the widget is initialized:
 
