@@ -46,8 +46,14 @@ class PricingScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Trigger an experiment when the user presses the subscribe button
-            PipeGuru.track('user_tapped_subscribe', properties: {'plan': 'premium'});
+            // This event can now be used to trigger an experiment from the PipeGuru dashboard
+            PipeGuru.track('user_viewed_pricing_page', properties: {
+                'plan': 'premium',
+                'user_level': 'power_user',
+                'gender': 'female',
+                'city': 'Berlin',
+                'country': 'Germany'
+            });
           },
           child: Text('Subscribe'),
         ),
@@ -72,8 +78,14 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     super.initState();
-    // Directly show an experiment
-    PipeGuru.showExperiment('new_user_onboarding');
+    // Directly show an experiment with properties
+    PipeGuru.showExperiment('new_user_onboarding', properties: {
+        'plan': 'premium',
+        'user_level': 'power_user',
+        'gender': 'female',
+        'city': 'Berlin',
+        'country': 'Germany'
+    });
   }
 
   @override

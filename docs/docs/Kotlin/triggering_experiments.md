@@ -38,8 +38,14 @@ class PricingActivity : AppCompatActivity() {
     }
 
     fun onSubscribeButtonClick(view: View) {
-        // Trigger an experiment when the user taps the subscribe button
-        PipeGuru.track("user_tapped_subscribe", mapOf("plan" to "premium"))
+        // This event can now be used to trigger an experiment from the PipeGuru dashboard
+        PipeGuru.track("user_viewed_pricing_page", mapOf(
+            "plan" to "premium",
+            "user_level" to "power_user",
+            "gender" to "female",
+            "city" to "Berlin",
+            "country" to "Germany"
+        ))
     }
 }
 ```
@@ -55,8 +61,14 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        // Directly show an experiment
-        PipeGuru.showExperiment("new_user_onboarding", this)
+        // Directly show an experiment with properties
+        PipeGuru.showExperiment("new_user_onboarding", this, mapOf(
+            "plan" to "premium",
+            "user_level" to "power_user",
+            "gender" to "female",
+            "city" to "Berlin",
+            "country" to "Germany"
+        ))
     }
 }
 ```

@@ -51,11 +51,9 @@ For example, in an iOS app using Swift:
 PipeGuru.track("user_viewed_pricing_page", properties: [
     "plan": "premium",
     "user_level": "power_user",
-    "user_properties": [
-        "gender": "female",
-        "city": "Berlin",
-        "country": "Germany"
-    ]
+    "gender": "female",
+    "city": "Berlin",
+    "country": "Germany"
 ])
 ```
 
