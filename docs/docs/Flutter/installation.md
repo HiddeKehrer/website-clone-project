@@ -13,7 +13,7 @@ First, add the PipeGuru dependency to your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  pipeguru: ^1.0.0
+  pipeguru_flutter: ^1.0.0
 ```
 
 ### 2. Install the SDK

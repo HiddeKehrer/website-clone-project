@@ -35,7 +35,7 @@ class PricingViewController: UIViewController {
 
         // Example properties for segmentation.
         // 'brazeSegments' is shown here as an example of passing custom data structures.
-        let braze_segments: [String] = ["segment1", "segment2"]
+        let brazeSegments: [String] = ["segment1", "segment2"]
 
         PipeGuru.track("user_viewed_pricing_page", properties: [
             "plan": "premium",
@@ -43,7 +43,7 @@ class PricingViewController: UIViewController {
             "gender": "female",
             "city": "Berlin",
             "country": "Germany",
-            "braze_segments": braze_segments // Assuming Braze segments are initialized already
+            "braze_segments": brazeSegments
         ])
     }
 }
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 
         // Directly show an experiment. The 'for' parameter expects a UIViewController
         // instance to be able to present the experiment UI, for example as a modal.
-        let braze_segments: [String] = ["segment1", "segment2"]
+        let brazeSegments: [String] = ["segment1", "segment2"]
 
         PipeGuru.showExperiment(withKey: "new_user_onboarding", for: self, properties: [
             "plan": "premium",
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
             "gender": "female",
             "city": "Berlin",
             "country": "Germany",
-            "braze_segments": braze_segments
+            "braze_segments": brazeSegments
         ])
     }
 }

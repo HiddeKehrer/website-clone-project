@@ -24,7 +24,7 @@ For example, in an iOS app using Swift Package Manager:
 import PipeGuru
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-  PipeGuru.configure(withApiKey: "YOUR_API_KEY")
+  PipeGuru.initialize("YOUR_API_KEY")
   return true
 }
 ```

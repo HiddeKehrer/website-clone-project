@@ -85,7 +85,7 @@ class _MainScreenState extends State<MainScreen> {
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final braze_segments = ['segment1', 'segment2'];
+      final brazeSegments = ['segment1', 'segment2'];
 
       // Directly show an experiment. This method requires a BuildContext
       // to present the experiment UI (e.g., as a new screen or dialog).
@@ -95,7 +95,7 @@ class _MainScreenState extends State<MainScreen> {
           'gender': 'female',
           'city': 'Berlin',
           'country': 'Germany',
-          'braze_segments': braze_segments
+          'braze_segments': brazeSegments
       });
     });
   }

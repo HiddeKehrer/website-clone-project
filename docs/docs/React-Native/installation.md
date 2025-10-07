@@ -24,7 +24,7 @@ yarn add @pipeguru/react-native
 If you are using an older version of React Native, you might need to link the native modules.
 
 ```bash
-npx react-native link pipeguru-react-native
+npx react-native link @pipeguru/react-native
 ```
 
 ### 2. Initialize PipeGuru

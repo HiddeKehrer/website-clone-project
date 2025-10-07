@@ -38,8 +38,8 @@ import PipeGuru from '@pipeguru/react-native';
 const PricingScreen = () => {
   const handleSubscribePress = () => {
     // Example properties for segmentation.
-    // 'braze_segments' is shown here as an example of passing custom data structures.
-    const braze_segments = ['segment1', 'segment2'];
+    // 'brazeSegments' is shown here as an example of passing custom data structures.
+    const brazeSegments = ['segment1', 'segment2'];
 
     // This event can now be used to trigger an experiment from the PipeGuru dashboard
     PipeGuru.track('user_viewed_pricing_page', {
@@ -48,7 +48,7 @@ const PricingScreen = () => {
         'gender': 'female',
         'city': 'Berlin',
         'country': 'Germany',
-        'braze_segments': braze_segments,
+        'braze_segments': brazeSegments,
     });
   };
 
@@ -71,7 +71,7 @@ import PipeGuru from '@pipeguru/react-native';
 
 const MainScreen = () => {
   useEffect(() => {
-    const braze_segments = ['segment1', 'segment2'];
+    const brazeSegments = ['segment1', 'segment2'];
 
     // Directly show an experiment with properties
     PipeGuru.showExperiment('new_user_onboarding', {
@@ -80,7 +80,7 @@ const MainScreen = () => {
         'gender': 'female',
         'city': 'Berlin',
         'country': 'Germany',
-        'braze_segments': braze_segments,
+        'braze_segments': brazeSegments,
     });
   }, []);
 
