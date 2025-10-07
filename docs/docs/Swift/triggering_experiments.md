@@ -13,10 +13,10 @@ import PipeGuru
 
 class ViewController: UIViewController {
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        // Trigger an experiment when the view appears
+        // Trigger an experiment once when the view is loaded
         PipeGuru.track("user_viewed_main_screen")
     }
 }

@@ -33,7 +33,7 @@ import PipeGuru
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Initialize PipeGuru with your API key
-    PipeGuru.configure(withApiKey: "YOUR_API_KEY")
+    PipeGuru.initialize("YOUR_API_KEY")
     return true
 }
 ```

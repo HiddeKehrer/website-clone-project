@@ -32,7 +32,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         // Initialize PipeGuru with your API key
-        PipeGuru.configure(this, "YOUR_API_KEY")
+        PipeGuru.initialize(this, "YOUR_API_KEY")
     }
 }
 ```

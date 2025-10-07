@@ -14,7 +14,7 @@ Integrating our lightweight SDK is a simple, two-step process. First, add the de
 ### Platform-Specific Installation
 
 - [React Native](/React-Native/installation)
-- [Swift](/Swift/Installation)
+- [Swift](/Swift/installation)
 - [Flutter](/Flutter/installation)
 - [Kotlin](/Kotlin/installation)
 
