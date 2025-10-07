@@ -10,7 +10,7 @@ In your React Native component, you can trigger an experiment when the component
 ```javascript
 import React, { useEffect } from 'react';
 import { View, Button } from 'react-native';
-import PipeGuru from '@pipeguru/react-native-pipeguru';
+import PipeGuru from '@pipeguru/react-native';
 
 const MainScreen = () => {
   useEffect(() => {
@@ -33,7 +33,7 @@ You can also trigger an experiment based on a user action, like a button press:
 ```javascript
 import React from 'react';
 import { View, Button } from 'react-native';
-import PipeGuru from '@pipeguru/react-native-pipeguru';
+import PipeGuru from '@pipeguru/react-native';
 
 const PricingScreen = () => {
   const handleSubscribePress = () => {
@@ -42,8 +42,9 @@ const PricingScreen = () => {
         'plan': 'premium',
         'user_level': 'power_user',
         'gender': 'female',
-        'city': 'Berlin',
-        'country': 'Germany'
+        'city': 'berlin',
+        'country': 'germany',
+        'braze_segments': braze_segments,
     });
   };
 
@@ -62,7 +63,7 @@ To show an experiment directly, you can use the `showExperiment` method:
 ```javascript
 import React, { useEffect } from 'react';
 import { View } from 'react-native';
-import PipeGuru from '@pipeguru/react-native-pipeguru';
+import PipeGuru from '@pipeguru/react-native';
 
 const MainScreen = () => {
   useEffect(() => {
@@ -72,7 +73,8 @@ const MainScreen = () => {
         'user_level': 'power_user',
         'gender': 'female',
         'city': 'Berlin',
-        'country': 'Germany'
+        'country': 'Germany',
+        'braze_segments': brazeSegments,
     });
   }, []);
 

@@ -26,13 +26,13 @@ Sync your project with the Gradle files to download the dependency.
 In your `MainApplication.kt` file, import and initialize PipeGuru.
 
 ```kotlin
-import com.pipeguru.PipeGuru
+import com.pipeguru.android.PipeGuru
 
 class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         // Initialize PipeGuru with your API key
-        PipeGuru.initialize(this, "YOUR_API_KEY")
+        PipeGuru.configure(this, "YOUR_API_KEY")
     }
 }
 ```

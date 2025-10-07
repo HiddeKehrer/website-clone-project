@@ -11,13 +11,15 @@ This guide will walk you through the steps to integrate PipeGuru into your React
 
 Install the PipeGuru package using npm or yarn.
 
+#### For React Native >= 0.60 (autolinking enabled)
+
 ```bash
-npm install pipeguru-react-native
+npm install @pipeguru/react-native
 # or
-yarn add pipeguru-react-native
+yarn add @pipeguru/react-native
 ```
 
-### 2. Link Native Dependencies (for older RN versions)
+#### For React Native < 0.60 (manual linking required)
 
 If you are using an older version of React Native, you might need to link the native modules.
 
@@ -25,12 +27,12 @@ If you are using an older version of React Native, you might need to link the na
 npx react-native link pipeguru-react-native
 ```
 
-### 3. Initialize PipeGuru
+### 2. Initialize PipeGuru
 
 In your main `App.js` or `index.js` file, import and initialize PipeGuru.
 
 ```javascript
-import PipeGuru from 'pipeguru-react-native';
+import PipeGuru from '@pipeguru/react-native';
 
 // Initialize PipeGuru with your API key
 PipeGuru.initialize("YOUR_API_KEY");

@@ -83,8 +83,8 @@ class _MainScreenState extends State<MainScreen> {
         'plan': 'premium',
         'user_level': 'power_user',
         'gender': 'female',
-        'city': 'Berlin',
-        'country': 'Germany'
+        'city': 'berlin',
+        'country': 'germany'
     });
   }
 

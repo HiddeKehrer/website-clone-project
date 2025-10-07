@@ -13,10 +13,10 @@ import PipeGuru
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        // Trigger an experiment when the view loads
+        // Trigger an experiment when the view appears
         PipeGuru.track("user_viewed_main_screen")
     }
 }
@@ -32,12 +32,15 @@ class PricingViewController: UIViewController {
 
     @IBAction func didTapSubscribeButton(_ sender: Any) {
         // This event can now be used to trigger an experiment from the PipeGuru dashboard
+        let brazeSegments = ["segment1", "segment2"] // Example Braze segments
+
         PipeGuru.track("user_viewed_pricing_page", properties: [
             "plan": "premium",
-            "user_level": "power_user",
+            "userLevel": "power_user",
             "gender": "female",
-            "city": "Berlin",
-            "country": "Germany"
+            "city": "berlin",
+            "country": "germany",
+            "brazeSegments": brazeSegments
         ])
     }
 }
@@ -54,13 +57,16 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        let brazeSegments = ["segment1", "segment2"] // Example Braze segments
+
         // Directly show an experiment with properties
         PipeGuru.showExperiment(withKey: "new_user_onboarding", for: self, properties: [
             "plan": "premium",
-            "user_level": "power_user",
+            "userLevel": "power_user",
             "gender": "female",
             "city": "Berlin",
-            "country": "Germany"
+            "country": "Germany",
+            "braze_segments": brazeSegments
         ])
     }
 }

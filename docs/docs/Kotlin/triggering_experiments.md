@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity() {
             "plan" to "premium",
             "user_level" to "power_user",
             "gender" to "female",
-            "city" to "Berlin",
-            "country" to "Germany"
+            "city" to "berlin",
+            "country" to "germany"
         ))
     }
 }

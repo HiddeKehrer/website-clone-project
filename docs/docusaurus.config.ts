@@ -69,15 +69,15 @@ const config: Config = {
         src: 'img/logo.svg',
         srcDark: 'img/logo_white.svg',
         width: 149,
-        height: 32,
-        href: '/', 
+        height: 32, 
+        href: 'https://pipeguru.ai/docs',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Getting Started',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
