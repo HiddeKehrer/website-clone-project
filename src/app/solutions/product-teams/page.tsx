@@ -58,14 +58,22 @@ export default function ProductTeamsPage() {
                       Stop building features users don't want and make validation a competitive advantage. Increase feature adoption by 40% while reducing development waste.
                     </p>
                     
-                    {/* Action Button */}
-                    <a 
-                      href="/book-call"
-                      className="inline-flex items-center gap-2 font-body bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
-                    >
-                      Talk to a founder
-                      <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </a>
+                    {/* Actions */}
+                    <div className="flex flex-wrap items-center gap-3">
+                      <a 
+                        href="/book-call"
+                        className="inline-flex items-center gap-2 font-body bg-black text-white px-7 py-3.5 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 group"
+                      >
+                        Talk to a founder
+                        <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                      </a>
+                      <a
+                        href="/solutions/marketing-teams"
+                        className="inline-flex items-center gap-2 font-body bg-white text-gray-800 px-6 py-3 rounded-lg font-medium text-base border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors"
+                      >
+                        To Marketing Teams
+                      </a>
+                    </div>
                   </div>
                 </div>
 

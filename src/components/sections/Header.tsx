@@ -119,14 +119,22 @@ const Header = () => {
               </a>
             </nav>
 
-            {/* Desktop Action Button */}
-            <Link 
-              href="/book-call"
-              className="hidden md:inline-flex font-body bg-black text-white px-7 py-3 rounded-lg font-medium text-base hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 items-center gap-2 group"
-            >
-              Talk to a founder
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </Link>
+            {/* Desktop Right Actions */}
+            <div className="hidden md:flex items-center gap-4">
+              <Link 
+                href="/docs"
+                className="font-body text-base font-normal hover:text-gray-600 transition-colors"
+              >
+                Docs
+              </Link>
+              <Link 
+                href="/book-call"
+                className="font-body bg-black text-white px-5 py-2.5 rounded-lg font-medium text-sm hover:shadow-lg hover:shadow-black/25 hover:scale-105 transition-all duration-200 items-center gap-2 group inline-flex"
+              >
+                Talk to a founder
+                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </Link>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -184,6 +192,13 @@ const Header = () => {
               )}
             </div>
 
+            <Link
+              href="/docs"
+              onClick={closeMobileMenu}
+              className="block py-2 font-body text-base font-normal text-gray-700 hover:text-black transition-colors"
+            >
+              Docs
+            </Link>
             <a
               href="#benefits"
               onClick={closeMobileMenu}
