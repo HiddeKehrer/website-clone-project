@@ -32,15 +32,18 @@ class PricingViewController: UIViewController {
 
     @IBAction func didTapSubscribeButton(_ sender: Any) {
         // This event can now be used to trigger an experiment from the PipeGuru dashboard
-        let brazeSegments = ["segment1", "segment2"] // Example Braze segments
+
+        // Example properties for segmentation.
+        // 'brazeSegments' is shown here as an example of passing custom data structures.
+        let braze_segments: [String] = ["segment1", "segment2"]
 
         PipeGuru.track("user_viewed_pricing_page", properties: [
             "plan": "premium",
-            "userLevel": "power_user",
+            "user_level": "power_user",
             "gender": "female",
-            "city": "berlin",
-            "country": "germany",
-            "brazeSegments": brazeSegments
+            "city": "Berlin",
+            "country": "Germany",
+            "braze_segments": braze_segments // Assuming Braze segments are initialized already
         ])
     }
 }
@@ -56,17 +59,18 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let brazeSegments = ["segment1", "segment2"] // Example Braze segments
 
-        // Directly show an experiment with properties
+        // Directly show an experiment. The 'for' parameter expects a UIViewController
+        // instance to be able to present the experiment UI, for example as a modal.
+        let braze_segments: [String] = ["segment1", "segment2"]
+
         PipeGuru.showExperiment(withKey: "new_user_onboarding", for: self, properties: [
             "plan": "premium",
-            "userLevel": "power_user",
+            "user_level": "power_user",
             "gender": "female",
             "city": "Berlin",
             "country": "Germany",
-            "braze_segments": brazeSegments
+            "braze_segments": braze_segments
         ])
     }
 }

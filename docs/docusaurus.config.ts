@@ -69,8 +69,9 @@ const config: Config = {
         src: 'img/logo.svg',
         srcDark: 'img/logo_white.svg',
         width: 149,
-        height: 32, 
+        height: 32,
         href: 'https://pipeguru.ai/docs',
+        target: '_self',
       },
       items: [
         {
@@ -82,6 +83,7 @@ const config: Config = {
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
+          target: '_self',
           position: 'right',
         },
       ],

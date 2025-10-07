@@ -46,13 +46,18 @@ class PricingScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
+            // Example properties for segmentation.
+            // 'braze_segments' is shown here as an example of passing custom data structures.
+            final brazeSegments = ['segment1', 'segment2'];
+
             // This event can now be used to trigger an experiment from the PipeGuru dashboard
             PipeGuru.track('user_viewed_pricing_page', properties: {
                 'plan': 'premium',
                 'user_level': 'power_user',
                 'gender': 'female',
                 'city': 'Berlin',
-                'country': 'Germany'
+                'country': 'Germany',
+                'braze_segments': brazeSegments
             });
           },
           child: Text('Subscribe'),
@@ -78,13 +83,20 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     super.initState();
-    // Directly show an experiment with properties
-    PipeGuru.showExperiment('new_user_onboarding', properties: {
-        'plan': 'premium',
-        'user_level': 'power_user',
-        'gender': 'female',
-        'city': 'berlin',
-        'country': 'germany'
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final braze_segments = ['segment1', 'segment2'];
+
+      // Directly show an experiment. This method requires a BuildContext
+      // to present the experiment UI (e.g., as a new screen or dialog).
+      PipeGuru.showExperiment('new_user_onboarding', context: context, properties: {
+          'plan': 'premium',
+          'user_level': 'power_user',
+          'gender': 'female',
+          'city': 'Berlin',
+          'country': 'Germany',
+          'braze_segments': braze_segments
+      });
     });
   }
 

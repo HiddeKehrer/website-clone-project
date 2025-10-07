@@ -33,14 +33,22 @@ In your main `App.js` or `index.js` file, import and initialize PipeGuru.
 
 ```javascript
 import PipeGuru from '@pipeguru/react-native';
+import React from 'react';
+import { View } from 'react-native';
 
 // Initialize PipeGuru with your API key
 PipeGuru.initialize("YOUR_API_KEY");
 
 // Your App component
 const App = () => {
-  // ...
+  return (
+    <View>
+      {/* ... */}
+    </View>
+  );
 };
+
+export default App;
 ```
 
 That's it! You're now ready to use PipeGuru in your React Native project.
