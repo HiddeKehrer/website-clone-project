@@ -1,11 +1,21 @@
-# Website
+# PipeGuru Developer Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the source code for the [PipeGuru Developer Documentation](https://pipeguru.com/docs). The site is built using [Docusaurus](https://docusaurus.io/), a modern static website generator that allows us to create a beautiful and organized documentation experience.
+
+PipeGuru empowers product, marketing, and sales teams to launch mobile A/B tests and feature rollouts in minutes, without writing any code. This documentation is the primary resource for developers integrating our SDKs.
+
+## Contributing
+
+We welcome contributions to improve our documentation! Whether you're fixing a typo, clarifying an explanation, or adding a new guide, your help is valuable.
+
+To get started, you'll need to have [Node.js](https://nodejs.org/en/download/) (v18 or newer) and [Yarn](https://yarnpkg.com/getting-started/install) installed.
 
 ## Installation
 
+Clone the repository and install the dependencies:
+
 ```bash
-yarn
+yarn install
 ```
 
 ## Local Development

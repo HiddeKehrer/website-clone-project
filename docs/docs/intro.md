@@ -65,6 +65,8 @@ Once the SDK is installed and events are tracked, your work is done. Your non-te
 
 They can build new UI in our webview editor, define target audiences, and roll out changes to a small percentage of users. Every change is versioned, so they can monitor results and instantly roll back any experiment that isn't performing well, all without needing 24x7 devops.
 
+We are still expanding the documentation here with screenshots.
+
 ## 4. Integrate with Your Stack
 
 PipeGuru plays well with others. You can easily forward all experiment and event data to your existing analytics and CRM platforms.
