@@ -17,11 +17,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/docs',
-        destination: '/docs/index.html',
+        destination: '/docs/intro',
       },
       {
         source: '/docs/:path((?!.*\\.).*)',
-        destination: '/docs/:path/index.html',
+        destination: '/docs/:path.html',
       },
     ];
   },
