@@ -1,0 +1,18 @@
+<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Widget Card Background -->
+  <rect width="180" height="90" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="12" y="8" width="156" height="16" rx="4" fill="#F59E0B"/>
+  
+  <!-- Tutorial content -->
+  <rect x="12" y="30" width="156" height="52" rx="6" fill="#0F172A"/>
+  
+  <!-- Tutorial elements -->
+  <rect x="20" y="35" width="40" height="42" rx="4" fill="#FBBF24"/>
+  <rect x="70" y="35" width="98" height="18" rx="4" fill="#F59E0B"/>
+  <rect x="70" y="58" width="98" height="19" rx="4" fill="#FDE047"/>
+  
+  <!-- Play icon -->
+  <polygon points="35,50 35,70 55,60" fill="#92400E"/>
+</svg>

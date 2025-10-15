@@ -1,0 +1,23 @@
+<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Widget Card Background -->
+  <rect width="180" height="90" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="12" y="8" width="156" height="16" rx="4" fill="#DC2626"/>
+  
+  <!-- Trading content -->
+  <rect x="12" y="30" width="156" height="52" rx="6" fill="#0F172A"/>
+  
+  <!-- Chart representation -->
+  <rect x="20" y="35" width="140" height="30" rx="4" fill="#1E40AF"/>
+  
+  <!-- Price indicators -->
+  <rect x="30" y="45" width="4" height="20" rx="1" fill="#EF4444"/>
+  <rect x="40" y="40" width="4" height="25" rx="1" fill="#22C55E"/>
+  <rect x="50" y="50" width="4" height="15" rx="1" fill="#EF4444"/>
+  <rect x="60" y="35" width="4" height="30" rx="1" fill="#22C55E"/>
+  
+  <!-- Price label -->
+  <rect x="120" y="40" width="35" height="20" rx="4" fill="#DC2626"/>
+  <text x="137" y="53" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$2,450</text>
+</svg>

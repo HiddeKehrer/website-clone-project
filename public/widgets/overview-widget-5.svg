@@ -1,0 +1,19 @@
+<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Widget Card Background -->
+  <rect width="180" height="90" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="12" y="8" width="156" height="16" rx="4" fill="#059669"/>
+  
+  <!-- Content -->
+  <rect x="12" y="30" width="156" height="52" rx="6" fill="#0F172A"/>
+  
+  <!-- Savings content -->
+  <rect x="20" y="35" width="60" height="42" rx="4" fill="#10B981"/>
+  <rect x="90" y="35" width="68" height="20" rx="4" fill="#34D399"/>
+  <rect x="90" y="60" width="68" height="17" rx="4" fill="#6EE7B7"/>
+  
+  <!-- Percentage indicator -->
+  <circle cx="155" cy="45" r="10" fill="#059669"/>
+  <text x="155" y="49" font-family="Arial" font-size="6" font-weight="bold" fill="white" text-anchor="middle">6%</text>
+</svg>

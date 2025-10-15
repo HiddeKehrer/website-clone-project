@@ -1,0 +1,19 @@
+<svg width="180" height="90" viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Widget Card Background -->
+  <rect width="180" height="90" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="12" y="8" width="156" height="16" rx="4" fill="#8B5CF6"/>
+  
+  <!-- Account setup content -->
+  <rect x="12" y="30" width="156" height="52" rx="6" fill="#0F172A"/>
+  
+  <!-- Account setup elements -->
+  <circle cx="40" cy="50" r="15" fill="#A78BFA"/>
+  <rect x="65" y="42" width="90" height="10" rx="2" fill="#8B5CF6"/>
+  <rect x="65" y="56" width="60" height="8" rx="2" fill="#C4B5FD"/>
+  
+  <!-- Arrow indicator -->
+  <rect x="140" y="45" width="20" height="10" rx="2" fill="#7C3AED"/>
+  <text x="150" y="52" font-family="Arial" font-size="6" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+</svg>

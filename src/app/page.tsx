@@ -1,7 +1,9 @@
 import Header from '@/components/sections/Header';
 import HeroSection from '@/components/sections/hero-section';
 import TrustedBrands from '@/components/sections/trusted-brands';
+import DemoVideoSection from '@/components/sections/demo-video-section';
 import ValueProposition from '@/components/sections/value-proposition';
+import DynamicInlineWidgets from '@/components/sections/dynamic-inline-widgets';
 import BenefitsSection from '@/components/sections/benefits-section';
 import TestimonialsSection from '@/components/sections/testimonials-section';
 import WhatsIncluded from '@/components/sections/whats-included';
@@ -26,7 +28,13 @@ export default function HomePage() {
         <TrustedBrands />
       </div>
       <div className="section-frame">
+        <DemoVideoSection />
+      </div>
+      <div className="section-frame">
         <ValueProposition />
+      </div>
+      <div className="section-frame">
+        <DynamicInlineWidgets />
       </div>
       <div className="section-frame">
         <BenefitsSection />
