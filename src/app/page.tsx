@@ -33,9 +33,9 @@ export default function HomePage() {
       <div className="section-frame">
         <ValueProposition />
       </div>
-      <div className="section-frame">
+      {/* <div className="section-frame">
         <DynamicInlineWidgets />
-      </div>
+      </div> */}
       <div className="section-frame">
         <BenefitsSection />
       </div>
