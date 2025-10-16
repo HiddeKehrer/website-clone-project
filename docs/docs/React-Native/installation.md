@@ -1,6 +1,7 @@
 ---
 title: React Native Installation Guide
 tags: [react-native, installation]
+sidebar_position: 1
 ---
 
 ## Getting Started with PipeGuru for React Native
@@ -39,7 +40,7 @@ npx react-native link @pipeguru/react-native
 
 In your main `App.js` or `index.js` file, import and initialize PipeGuru.
 
-```javascript
+```typescript
 import PipeGuru from '@pipeguru/react-native';
 import React from 'react';
 import { View } from 'react-native';
